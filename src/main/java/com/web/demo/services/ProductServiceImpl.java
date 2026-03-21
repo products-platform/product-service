@@ -7,13 +7,18 @@ import com.product.dtos.ProductSearchRequest;
 import com.product.exceptions.DuplicateResourceException;
 import com.product.exceptions.ProductNotFoundException;
 import com.product.exceptions.ResourceNotFoundException;
+import com.web.demo.documents.ProductDocument;
+import com.web.demo.mapper.ProductMapper;
 import com.web.demo.models.Product;
+import com.web.demo.models.ProductVariant;
 import com.web.demo.producer.ProductEventProducer;
 import com.web.demo.reader.JsonFileReader;
 import com.web.demo.records.ProductDto;
 import com.web.demo.repos.ProductRepository;
+import com.web.demo.repos.ProductSearchRepository;
 import com.web.demo.specification.ProductSpecification;
 import jakarta.annotation.PostConstruct;
+import lombok.AllArgsConstructor;
 import org.springframework.cache.annotation.CacheEvict;
 import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
@@ -29,6 +34,7 @@ import java.util.Set;
 
 @Service
 @Transactional
+@AllArgsConstructor
 public class ProductServiceImpl implements ProductService {
 
     private static final String FILE_NAME = "products.json";
@@ -39,14 +45,8 @@ public class ProductServiceImpl implements ProductService {
 
     private final ProductRepository productRepository;
     private final ProductEventProducer producer;
-
-    public ProductServiceImpl(JsonFileReader jsonFileReader,
-                              ProductRepository productRepository,
-                              ProductEventProducer producer) {
-        this.jsonFileReader = jsonFileReader;
-        this.productRepository = productRepository;
-        this.producer = producer;
-    }
+    private final ProductMapper productMapper;
+    private final ProductSearchRepository searchRepository;
 
     @PostConstruct
     public void loadProducts() {
@@ -71,9 +71,8 @@ public class ProductServiceImpl implements ProductService {
                         new ResourceNotFoundException("Customer not found with id: " + id));
     }
 
-    @Override
     @CachePut(value = "products", key = "#result.id")
-    public ProductResponse create(ProductRequest request) {
+    public ProductResponse create1(ProductRequest request) {
         if (productRepository.existsBySku(request.sku())) {
             throw new DuplicateResourceException("SKU already exists");
         }
@@ -90,9 +89,26 @@ public class ProductServiceImpl implements ProductService {
                 .build());
 
         // Publish event after save
-        producer.publishProductCreated(product.getId(), product.getName());
+        producer.publishProductCreated(product.getProductId(), product.getName());
 
         return mapToResponse(product);
+    }
+
+    // ✅ CREATE PRODUCT
+    @Override
+    public ProductResponse create(ProductRequest request) {
+        Product product = productMapper.buildEntity(request);
+
+        // ✅ Save to DB
+        productRepository.save(product);
+
+        // ✅ Index to Elasticsearch
+        indexToElastic(product);
+        return mapToResponse(product);
+    }
+    private void indexToElastic(Product product) {
+        ProductDocument document = productMapper.toDocument(product);
+        searchRepository.save(document);
     }
 
     @Override
@@ -177,7 +193,7 @@ public class ProductServiceImpl implements ProductService {
 
     private ProductResponse mapToResponse(Product product) {
         return new ProductResponse(
-                product.getId(),
+                product.getProductId(),
                 product.getSku(),
                 product.getName(),
                 product.getBrand(),

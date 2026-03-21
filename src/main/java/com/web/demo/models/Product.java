@@ -26,7 +26,7 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    private Long productId;
 
     // Business identifier
     @Column(nullable = false, unique = true, length = 50)
