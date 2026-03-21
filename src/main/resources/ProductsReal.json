@@ -1,0 +1,92 @@
+[
+  {
+    "sku": "APL-IP15-128-BLK",
+    "name": "iPhone 15 128GB Black",
+    "brand": "Apple",
+    "category": "Smartphones",
+    "price": 799.99,
+    "weightInGrams": 171,
+    "description": "Apple iPhone 15 with 128GB storage, 6.1-inch Super Retina XDR display, A16 Bionic chip, and dual-camera system."
+  },
+  {
+    "sku": "SMS-S24-256-GRY",
+    "name": "Galaxy S24 256GB Gray",
+    "brand": "Samsung",
+    "category": "Smartphones",
+    "price": 899.99,
+    "weightInGrams": 168,
+    "description": "Samsung Galaxy S24 featuring 256GB storage, Dynamic AMOLED display, Snapdragon processor, and triple camera setup."
+  },
+  {
+    "sku": "LNV-TPX1-16-512",
+    "name": "ThinkPad X1 Carbon Gen 11",
+    "brand": "Lenovo",
+    "category": "Laptops",
+    "price": 1499.00,
+    "weightInGrams": 1120,
+    "description": "Lenovo ThinkPad X1 Carbon Gen 11 with Intel Core i7, 16GB RAM, 512GB SSD, and 14-inch WUXGA display."
+  },
+  {
+    "sku": "NKE-AFM-10-WHT",
+    "name": "Air Force 1 '07 White",
+    "brand": "Nike",
+    "category": "Footwear",
+    "price": 110.00,
+    "weightInGrams": 450,
+    "description": "Classic Nike Air Force 1 '07 sneakers in white leather with cushioned midsole and durable rubber outsole."
+  },
+  {
+    "sku": "ADS-UB22-BLK-42",
+    "name": "Ultraboost 22 Black",
+    "brand": "Adidas",
+    "category": "Footwear",
+    "price": 180.00,
+    "weightInGrams": 340,
+    "description": "Adidas Ultraboost 22 running shoes featuring responsive Boost cushioning and Primeknit upper."
+  },
+  {
+    "sku": "SNY-WH1000XM5-BLK",
+    "name": "WH-1000XM5 Wireless Headphones",
+    "brand": "Sony",
+    "category": "Audio",
+    "price": 399.99,
+    "weightInGrams": 250,
+    "description": "Sony WH-1000XM5 noise-canceling wireless headphones with up to 30 hours battery life and superior sound quality."
+  },
+  {
+    "sku": "DLG-XPS13-16-1TB",
+    "name": "XPS 13 Plus",
+    "brand": "Dell",
+    "category": "Laptops",
+    "price": 1699.99,
+    "weightInGrams": 1230,
+    "description": "Dell XPS 13 Plus with 13.4-inch OLED display, Intel Core i7 processor, 16GB RAM, and 1TB SSD."
+  },
+  {
+    "sku": "APPL-AIRP-MAX-SLV",
+    "name": "AirPods Max Silver",
+    "brand": "Apple",
+    "category": "Audio",
+    "price": 549.00,
+    "weightInGrams": 385,
+    "description": "Apple AirPods Max over-ear headphones with active noise cancellation, spatial audio, and premium aluminum design."
+  },
+  {
+    "sku": "SMS-TV55-Q80C",
+    "name": "55-inch QLED Q80C 4K TV",
+    "brand": "Samsung",
+    "category": "Televisions",
+    "price": 1199.99,
+    "weightInGrams": 18500,
+    "description": "Samsung 55-inch Q80C QLED 4K Smart TV with Quantum HDR+, Dolby Atmos, and built-in streaming apps."
+  },
+  {
+    "sku": "BOS-QC45-BLK",
+    "name": "QuietComfort 45 Headphones",
+    "brand": "Bose",
+    "category": "Audio",
+    "price": 329.00,
+    "weightInGrams": 240,
+    "description": "Bose QuietComfort 45 wireless headphones with world-class noise cancellation and up to 24 hours battery life."
+  }
+]
