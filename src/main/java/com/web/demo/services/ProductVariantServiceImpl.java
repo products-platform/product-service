@@ -40,6 +40,6 @@ public class ProductVariantServiceImpl implements ProductVariantService {
 
     @Override
     public List<ProductVariant> getVariants(Long productId) {
-        return variantRepository.findByProductId(productId);
+        return variantRepository.findByProduct_ProductId(productId);
     }
 }

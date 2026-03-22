@@ -13,7 +13,6 @@ import java.util.List;
 public class ProductMapperImpl implements ProductMapper {
 
     public Product buildEntity(ProductRequest request) {
-
         Product product = new Product();
         product.setProductId(request.productId());
         product.setSku(request.sku());

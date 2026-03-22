@@ -16,9 +16,10 @@ public class ProductVariant {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+    @Column(name = "ID")
+    private Long variantId;
 
-    @Column(nullable = false)
+    @Column(name = "variant_size", nullable = false)
     private String size;
 
     @Column(nullable = false)

@@ -10,7 +10,6 @@ import com.product.exceptions.ResourceNotFoundException;
 import com.web.demo.documents.ProductDocument;
 import com.web.demo.mapper.ProductMapper;
 import com.web.demo.models.Product;
-import com.web.demo.models.ProductVariant;
 import com.web.demo.producer.ProductEventProducer;
 import com.web.demo.reader.JsonFileReader;
 import com.web.demo.records.ProductDto;
@@ -89,7 +88,7 @@ public class ProductServiceImpl implements ProductService {
                 .build());
 
         // Publish event after save
-        producer.publishProductCreated(product.getProductId(), product.getName());
+        //producer.publishProductCreated(product.getProductId(), product.getName());
 
         return mapToResponse(product);
     }
@@ -102,8 +101,11 @@ public class ProductServiceImpl implements ProductService {
         // ✅ Save to DB
         productRepository.save(product);
 
+        // Publish event after save
+        producer.publishProductCreated(product);
+
         // ✅ Index to Elasticsearch
-        indexToElastic(product);
+        //indexToElastic(product);
         return mapToResponse(product);
     }
     private void indexToElastic(Product product) {

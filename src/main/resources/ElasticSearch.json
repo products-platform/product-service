@@ -1,0 +1,23 @@
+PUT products
+{
+  "mappings": {
+    "properties": {
+      "productId": { "type": "long" },
+      "name": { "type": "text" },
+      "brand": { "type": "keyword" },
+      "category": { "type": "keyword" },
+      "description": { "type": "text" },
+      "price": { "type": "double" },
+      "variantDocumentList": {
+        "type": "nested",
+        "properties": {
+          "size": { "type": "keyword" },
+          "color": { "type": "keyword" },
+          "configuration": { "type": "keyword" },
+          "price": { "type": "double" },
+          "stock": { "type": "integer" }
+        }
+      }
+    }
+  }
+}

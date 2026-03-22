@@ -26,6 +26,7 @@ public class Product {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ID")
     private Long productId;
 
     // Business identifier
@@ -48,6 +49,7 @@ public class Product {
     private Integer weightInGrams;
 
     @Column(nullable = false)
+    @Builder.Default
     private Boolean active = true;
 
     @Column(length = 1000)
@@ -60,6 +62,7 @@ public class Product {
     private Instant updatedAt;
 
     @OneToMany(mappedBy = "product", cascade = CascadeType.ALL, orphanRemoval = true)
+    @Builder.Default
     private List<ProductVariant> variants = new ArrayList<>();
 
     @PrePersist

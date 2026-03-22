@@ -1,12 +1,10 @@
-# product-service
-
 First Check Gradle version and down grade gradle
 
 ./gradlew --versio
-./gradlew wrapper --gradle-version 8.7
+ ./gradlew wrapper --gradle-version 8.7
 
 
-Services
+ Services
 products-platform/
 ├── service-registry/
 ├── config-server/
@@ -72,25 +70,25 @@ Password: dudkrish1A
 ===========================================
 
 Client
-↓
+   ↓
 API Gateway
-↓
+   ↓
 Order Service (create order)
-↓
+   ↓
 Inventory Service (RESERVE stock)
-↓
+   ↓
 Payment Service
-↓
+   ↓
 External Payment Gateway
-↓
+   ↓
 Order Service (CONFIRM order)
-↓
+   ↓
 Inventory Service (CONFIRM stock)
-↓
+   ↓
 Payment History Service
-↓
+   ↓
 Notification Service
-↓
+   ↓
 Response
 
 =======================================
