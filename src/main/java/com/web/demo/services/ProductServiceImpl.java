@@ -73,7 +73,7 @@ public class ProductServiceImpl implements ProductService {
     // ✅ CREATE PRODUCT
     //@CachePut(value = "products", key = "#result.id")
     @Override
-    public ProductResponse create(ProductRequest request) {
+    public ProductResponse createSingleProduct(ProductRequest request) {
         Product product = productMapper.buildEntity(request);
         // ✅ Save to DB
         productRepository.save(product);
@@ -86,9 +86,32 @@ public class ProductServiceImpl implements ProductService {
         return mapToResponse(product);
     }
 
+    @Override
+    public String createBulkProducts(List<ProductRequest> requests) {
+        List<Product> products = requests.stream()
+                .map(request -> productMapper.buildEntity(request))
+                .toList();
+        // ✅ Save to DB
+        productRepository.saveAll(products);
+
+        // Publish event after save
+        //producer.publishProductCreated(product);
+
+        // ✅ Index to Elasticsearch
+        indexToElasticBulk(products);
+        return "Inserted Successfully";
+    }
+
     private void indexToElastic(Product product) {
         ProductDocument document = productMapper.toDocument(product);
         searchRepository.save(document);
+    }
+
+    private void indexToElasticBulk(List<Product> products) {
+        List<ProductDocument> productDocuments = products.stream()
+                .map(productMapper::toDocument)
+                .toList();
+        searchRepository.saveAll(productDocuments);
     }
 
     @Override

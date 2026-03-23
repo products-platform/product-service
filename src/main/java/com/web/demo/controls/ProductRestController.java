@@ -22,8 +22,13 @@ public class ProductRestController {
     }
 
     @PostMapping
-    public ProductResponse create(@RequestBody ProductRequest request) {
-        return productService.create(request);
+    public ProductResponse createSingleProduct(@RequestBody ProductRequest request) {
+        return productService.createSingleProduct(request);
+    }
+
+    @PostMapping("bulkCreate")
+    public String createBulkProducts(@RequestBody List<ProductRequest> requests) {
+        return productService.createBulkProducts(requests);
     }
 
     @GetMapping("list")

@@ -14,7 +14,7 @@ public interface ProductService {
 
     ProductDto getProductByIdJsonFile(Long id);
 
-    ProductResponse create(ProductRequest request);
+    ProductResponse createSingleProduct(ProductRequest request);
 
     ProductResponse update(Long id, ProductRequest request);
 
@@ -28,4 +28,6 @@ public interface ProductService {
             Set<Long> ids);
 
     List<ProductResponse> searchProducts(ProductSearchRequest productSearchRequest);
+
+    String createBulkProducts(List<ProductRequest> requests);
 }

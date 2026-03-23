@@ -1,0 +1,2964 @@
+{
+  "products": [
+    {
+      "productId": 1,
+      "sku": "NOK-001",
+      "name": "Nokia Model 1",
+      "brand": "Nokia",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "NOK-001-512-GRE-0",
+          "size": "512GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 114056,
+          "weightInGrams": 222,
+          "description": "Nokia smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 2,
+      "sku": "MOT-002",
+      "name": "Motorola Model 2",
+      "brand": "Motorola",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "MOT-002-128-GOL-0",
+          "size": "128GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 32474,
+          "weightInGrams": 219,
+          "description": "Motorola smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "MOT-002-128-GRE-1",
+          "size": "128GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 32351,
+          "weightInGrams": 206,
+          "description": "Motorola smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 3,
+      "sku": "SAM-003",
+      "name": "Samsung Model 3",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-003-256-GRE-0",
+          "size": "256GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 76145,
+          "weightInGrams": 213,
+          "description": "Samsung smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "SAM-003-128-BLU-1",
+          "size": "128GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 159630,
+          "weightInGrams": 250,
+          "description": "Samsung smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "SAM-003-256-WHI-2",
+          "size": "256GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 16390,
+          "weightInGrams": 170,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 4,
+      "sku": "NOK-004",
+      "name": "Nokia Model 4",
+      "brand": "Nokia",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "NOK-004-256-WHI-0",
+          "size": "256GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 83572,
+          "weightInGrams": 239,
+          "description": "Nokia smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "NOK-004-512-GRA-1",
+          "size": "512GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 113359,
+          "weightInGrams": 169,
+          "description": "Nokia smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "NOK-004-128-WHI-2",
+          "size": "128GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 66684,
+          "weightInGrams": 246,
+          "description": "Nokia smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 5,
+      "sku": "SAM-005",
+      "name": "Samsung Model 5",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-005-256-GRA-0",
+          "size": "256GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 28836,
+          "weightInGrams": 220,
+          "description": "Samsung smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "SAM-005-256-GRA-1",
+          "size": "256GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 123685,
+          "weightInGrams": 204,
+          "description": "Samsung smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "SAM-005-128-WHI-2",
+          "size": "128GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 133139,
+          "weightInGrams": 193,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 6,
+      "sku": "NOK-006",
+      "name": "Nokia Model 6",
+      "brand": "Nokia",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "NOK-006-512-GRE-0",
+          "size": "512GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 36560,
+          "weightInGrams": 176,
+          "description": "Nokia smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "NOK-006-512-GRA-1",
+          "size": "512GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 113621,
+          "weightInGrams": 166,
+          "description": "Nokia smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 7,
+      "sku": "REA-007",
+      "name": "Realme Model 7",
+      "brand": "Realme",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "REA-007-256-BLU-0",
+          "size": "256GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 148775,
+          "weightInGrams": 247,
+          "description": "Realme smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "REA-007-256-BLU-1",
+          "size": "256GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 41629,
+          "weightInGrams": 193,
+          "description": "Realme smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "REA-007-128-GRE-2",
+          "size": "128GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 109240,
+          "weightInGrams": 189,
+          "description": "Realme smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 8,
+      "sku": "ONE-008",
+      "name": "OnePlus Model 8",
+      "brand": "OnePlus",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "ONE-008-256-GOL-0",
+          "size": "256GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 59955,
+          "weightInGrams": 176,
+          "description": "OnePlus smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "ONE-008-512-WHI-1",
+          "size": "512GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 141912,
+          "weightInGrams": 167,
+          "description": "OnePlus smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "ONE-008-128-SIL-2",
+          "size": "128GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 75516,
+          "weightInGrams": 208,
+          "description": "OnePlus smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 9,
+      "sku": "XIA-009",
+      "name": "Xiaomi Model 9",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-009-256-BLA-0",
+          "size": "256GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 113121,
+          "weightInGrams": 233,
+          "description": "Xiaomi smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "XIA-009-512-GOL-1",
+          "size": "512GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 117807,
+          "weightInGrams": 192,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 10,
+      "sku": "VIV-010",
+      "name": "Vivo Model 10",
+      "brand": "Vivo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "VIV-010-128-GOL-0",
+          "size": "128GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 106751,
+          "weightInGrams": 215,
+          "description": "Vivo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "VIV-010-256-SIL-1",
+          "size": "256GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 43175,
+          "weightInGrams": 183,
+          "description": "Vivo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 11,
+      "sku": "OPP-011",
+      "name": "Oppo Model 11",
+      "brand": "Oppo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "OPP-011-128-BLU-0",
+          "size": "128GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 75592,
+          "weightInGrams": 168,
+          "description": "Oppo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 12,
+      "sku": "XIA-012",
+      "name": "Xiaomi Model 12",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-012-512-GRE-0",
+          "size": "512GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 109407,
+          "weightInGrams": 164,
+          "description": "Xiaomi smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "XIA-012-512-GOL-1",
+          "size": "512GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 30126,
+          "weightInGrams": 214,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 13,
+      "sku": "OPP-013",
+      "name": "Oppo Model 13",
+      "brand": "Oppo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "OPP-013-512-SIL-0",
+          "size": "512GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 35182,
+          "weightInGrams": 178,
+          "description": "Oppo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "OPP-013-512-SIL-1",
+          "size": "512GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 148263,
+          "weightInGrams": 231,
+          "description": "Oppo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 14,
+      "sku": "VIV-014",
+      "name": "Vivo Model 14",
+      "brand": "Vivo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "VIV-014-128-GRA-0",
+          "size": "128GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 155445,
+          "weightInGrams": 235,
+          "description": "Vivo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 15,
+      "sku": "SAM-015",
+      "name": "Samsung Model 15",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-015-256-GRE-0",
+          "size": "256GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 90685,
+          "weightInGrams": 168,
+          "description": "Samsung smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "SAM-015-512-GRA-1",
+          "size": "512GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 110285,
+          "weightInGrams": 246,
+          "description": "Samsung smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "SAM-015-256-GRA-2",
+          "size": "256GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 132032,
+          "weightInGrams": 249,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 16,
+      "sku": "REA-016",
+      "name": "Realme Model 16",
+      "brand": "Realme",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "REA-016-256-GRA-0",
+          "size": "256GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 39952,
+          "weightInGrams": 186,
+          "description": "Realme smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "REA-016-512-BLU-1",
+          "size": "512GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 44988,
+          "weightInGrams": 193,
+          "description": "Realme smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 17,
+      "sku": "REA-017",
+      "name": "Realme Model 17",
+      "brand": "Realme",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "REA-017-512-BLU-0",
+          "size": "512GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 146465,
+          "weightInGrams": 198,
+          "description": "Realme smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "REA-017-256-BLU-1",
+          "size": "256GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 90844,
+          "weightInGrams": 217,
+          "description": "Realme smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "REA-017-256-GRE-2",
+          "size": "256GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 114963,
+          "weightInGrams": 204,
+          "description": "Realme smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 18,
+      "sku": "GOO-018",
+      "name": "Google Model 18",
+      "brand": "Google",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "GOO-018-128-BLA-0",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 112652,
+          "weightInGrams": 207,
+          "description": "Google smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 19,
+      "sku": "MOT-019",
+      "name": "Motorola Model 19",
+      "brand": "Motorola",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "MOT-019-512-GRE-0",
+          "size": "512GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 48967,
+          "weightInGrams": 164,
+          "description": "Motorola smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "MOT-019-256-GRA-1",
+          "size": "256GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 113938,
+          "weightInGrams": 223,
+          "description": "Motorola smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "MOT-019-512-SIL-2",
+          "size": "512GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 36079,
+          "weightInGrams": 242,
+          "description": "Motorola smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 20,
+      "sku": "APP-020",
+      "name": "Apple Model 20",
+      "brand": "Apple",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "APP-020-512-GRE-0",
+          "size": "512GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 140689,
+          "weightInGrams": 201,
+          "description": "Apple smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 21,
+      "sku": "GOO-021",
+      "name": "Google Model 21",
+      "brand": "Google",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "GOO-021-256-SIL-0",
+          "size": "256GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 122689,
+          "weightInGrams": 179,
+          "description": "Google smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 22,
+      "sku": "OPP-022",
+      "name": "Oppo Model 22",
+      "brand": "Oppo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "OPP-022-256-BLA-0",
+          "size": "256GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 24218,
+          "weightInGrams": 173,
+          "description": "Oppo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 23,
+      "sku": "SAM-023",
+      "name": "Samsung Model 23",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-023-256-WHI-0",
+          "size": "256GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 130486,
+          "weightInGrams": 223,
+          "description": "Samsung smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "SAM-023-512-GOL-1",
+          "size": "512GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 96502,
+          "weightInGrams": 240,
+          "description": "Samsung smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "SAM-023-128-GOL-2",
+          "size": "128GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 94321,
+          "weightInGrams": 166,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 24,
+      "sku": "GOO-024",
+      "name": "Google Model 24",
+      "brand": "Google",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "GOO-024-256-GRE-0",
+          "size": "256GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 75143,
+          "weightInGrams": 239,
+          "description": "Google smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "GOO-024-128-GOL-1",
+          "size": "128GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 138130,
+          "weightInGrams": 207,
+          "description": "Google smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 25,
+      "sku": "XIA-025",
+      "name": "Xiaomi Model 25",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-025-512-WHI-0",
+          "size": "512GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 76860,
+          "weightInGrams": 227,
+          "description": "Xiaomi smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "XIA-025-512-BLU-1",
+          "size": "512GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 34623,
+          "weightInGrams": 166,
+          "description": "Xiaomi smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "XIA-025-128-GRE-2",
+          "size": "128GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 19108,
+          "weightInGrams": 216,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 26,
+      "sku": "OPP-026",
+      "name": "Oppo Model 26",
+      "brand": "Oppo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "OPP-026-256-WHI-0",
+          "size": "256GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 50392,
+          "weightInGrams": 198,
+          "description": "Oppo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "OPP-026-512-SIL-1",
+          "size": "512GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 145627,
+          "weightInGrams": 181,
+          "description": "Oppo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "OPP-026-512-GRE-2",
+          "size": "512GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 45526,
+          "weightInGrams": 248,
+          "description": "Oppo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 27,
+      "sku": "VIV-027",
+      "name": "Vivo Model 27",
+      "brand": "Vivo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "VIV-027-256-GRE-0",
+          "size": "256GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 103772,
+          "weightInGrams": 187,
+          "description": "Vivo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "VIV-027-128-SIL-1",
+          "size": "128GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 131164,
+          "weightInGrams": 160,
+          "description": "Vivo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "VIV-027-512-GOL-2",
+          "size": "512GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 53055,
+          "weightInGrams": 179,
+          "description": "Vivo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 28,
+      "sku": "REA-028",
+      "name": "Realme Model 28",
+      "brand": "Realme",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "REA-028-128-GRA-0",
+          "size": "128GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 116849,
+          "weightInGrams": 243,
+          "description": "Realme smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 29,
+      "sku": "NOK-029",
+      "name": "Nokia Model 29",
+      "brand": "Nokia",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "NOK-029-512-GRE-0",
+          "size": "512GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 151258,
+          "weightInGrams": 205,
+          "description": "Nokia smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 30,
+      "sku": "GOO-030",
+      "name": "Google Model 30",
+      "brand": "Google",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "GOO-030-512-BLU-0",
+          "size": "512GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 27490,
+          "weightInGrams": 236,
+          "description": "Google smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 31,
+      "sku": "SAM-031",
+      "name": "Samsung Model 31",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-031-256-SIL-0",
+          "size": "256GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 128476,
+          "weightInGrams": 174,
+          "description": "Samsung smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "SAM-031-128-GRE-1",
+          "size": "128GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 56334,
+          "weightInGrams": 184,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 32,
+      "sku": "REA-032",
+      "name": "Realme Model 32",
+      "brand": "Realme",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "REA-032-128-BLA-0",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 114130,
+          "weightInGrams": 247,
+          "description": "Realme smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "REA-032-512-GRA-1",
+          "size": "512GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 31836,
+          "weightInGrams": 222,
+          "description": "Realme smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 33,
+      "sku": "XIA-033",
+      "name": "Xiaomi Model 33",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-033-512-GRA-0",
+          "size": "512GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 154901,
+          "weightInGrams": 167,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 34,
+      "sku": "SAM-034",
+      "name": "Samsung Model 34",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-034-256-GRA-0",
+          "size": "256GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 110120,
+          "weightInGrams": 216,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 35,
+      "sku": "XIA-035",
+      "name": "Xiaomi Model 35",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-035-512-BLA-0",
+          "size": "512GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 91263,
+          "weightInGrams": 165,
+          "description": "Xiaomi smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "XIA-035-128-GOL-1",
+          "size": "128GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 69588,
+          "weightInGrams": 234,
+          "description": "Xiaomi smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "XIA-035-128-WHI-2",
+          "size": "128GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 107027,
+          "weightInGrams": 227,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 36,
+      "sku": "XIA-036",
+      "name": "Xiaomi Model 36",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-036-512-BLA-0",
+          "size": "512GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 19193,
+          "weightInGrams": 241,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 37,
+      "sku": "REA-037",
+      "name": "Realme Model 37",
+      "brand": "Realme",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "REA-037-128-SIL-0",
+          "size": "128GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 116212,
+          "weightInGrams": 231,
+          "description": "Realme smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "REA-037-256-GOL-1",
+          "size": "256GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 21956,
+          "weightInGrams": 237,
+          "description": "Realme smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 38,
+      "sku": "NOK-038",
+      "name": "Nokia Model 38",
+      "brand": "Nokia",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "NOK-038-512-BLA-0",
+          "size": "512GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 71299,
+          "weightInGrams": 200,
+          "description": "Nokia smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "NOK-038-256-GRA-1",
+          "size": "256GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 93689,
+          "weightInGrams": 175,
+          "description": "Nokia smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "NOK-038-512-BLA-2",
+          "size": "512GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 49542,
+          "weightInGrams": 176,
+          "description": "Nokia smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 39,
+      "sku": "NOK-039",
+      "name": "Nokia Model 39",
+      "brand": "Nokia",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "NOK-039-256-GOL-0",
+          "size": "256GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 103639,
+          "weightInGrams": 211,
+          "description": "Nokia smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "NOK-039-256-GRE-1",
+          "size": "256GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 142245,
+          "weightInGrams": 183,
+          "description": "Nokia smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 40,
+      "sku": "REA-040",
+      "name": "Realme Model 40",
+      "brand": "Realme",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "REA-040-128-GOL-0",
+          "size": "128GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 144401,
+          "weightInGrams": 172,
+          "description": "Realme smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "REA-040-128-BLA-1",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 88640,
+          "weightInGrams": 176,
+          "description": "Realme smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 41,
+      "sku": "OPP-041",
+      "name": "Oppo Model 41",
+      "brand": "Oppo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "OPP-041-128-SIL-0",
+          "size": "128GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 107562,
+          "weightInGrams": 183,
+          "description": "Oppo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "OPP-041-128-GRA-1",
+          "size": "128GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 31846,
+          "weightInGrams": 212,
+          "description": "Oppo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "OPP-041-512-BLU-2",
+          "size": "512GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 107266,
+          "weightInGrams": 193,
+          "description": "Oppo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 42,
+      "sku": "APP-042",
+      "name": "Apple Model 42",
+      "brand": "Apple",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "APP-042-256-GRA-0",
+          "size": "256GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 94512,
+          "weightInGrams": 211,
+          "description": "Apple smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "APP-042-512-SIL-1",
+          "size": "512GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 114325,
+          "weightInGrams": 210,
+          "description": "Apple smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 43,
+      "sku": "NOK-043",
+      "name": "Nokia Model 43",
+      "brand": "Nokia",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "NOK-043-256-BLA-0",
+          "size": "256GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 32842,
+          "weightInGrams": 224,
+          "description": "Nokia smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 44,
+      "sku": "XIA-044",
+      "name": "Xiaomi Model 44",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-044-512-BLU-0",
+          "size": "512GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 78512,
+          "weightInGrams": 238,
+          "description": "Xiaomi smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "XIA-044-256-GRE-1",
+          "size": "256GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 121050,
+          "weightInGrams": 176,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 45,
+      "sku": "ONE-045",
+      "name": "OnePlus Model 45",
+      "brand": "OnePlus",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "ONE-045-512-GRA-0",
+          "size": "512GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 99672,
+          "weightInGrams": 222,
+          "description": "OnePlus smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "ONE-045-256-GRE-1",
+          "size": "256GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 54241,
+          "weightInGrams": 206,
+          "description": "OnePlus smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 46,
+      "sku": "XIA-046",
+      "name": "Xiaomi Model 46",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-046-128-WHI-0",
+          "size": "128GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 101397,
+          "weightInGrams": 196,
+          "description": "Xiaomi smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "XIA-046-512-BLU-1",
+          "size": "512GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 34293,
+          "weightInGrams": 214,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 47,
+      "sku": "GOO-047",
+      "name": "Google Model 47",
+      "brand": "Google",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "GOO-047-256-GOL-0",
+          "size": "256GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 45361,
+          "weightInGrams": 197,
+          "description": "Google smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "GOO-047-128-SIL-1",
+          "size": "128GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 17954,
+          "weightInGrams": 179,
+          "description": "Google smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "GOO-047-256-GRA-2",
+          "size": "256GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 159304,
+          "weightInGrams": 227,
+          "description": "Google smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 48,
+      "sku": "NOK-048",
+      "name": "Nokia Model 48",
+      "brand": "Nokia",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "NOK-048-128-SIL-0",
+          "size": "128GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 141655,
+          "weightInGrams": 232,
+          "description": "Nokia smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 49,
+      "sku": "SAM-049",
+      "name": "Samsung Model 49",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-049-256-SIL-0",
+          "size": "256GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 40023,
+          "weightInGrams": 193,
+          "description": "Samsung smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "SAM-049-256-GOL-1",
+          "size": "256GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 52056,
+          "weightInGrams": 169,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 50,
+      "sku": "OPP-050",
+      "name": "Oppo Model 50",
+      "brand": "Oppo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "OPP-050-128-GRE-0",
+          "size": "128GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 121421,
+          "weightInGrams": 248,
+          "description": "Oppo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "OPP-050-128-GOL-1",
+          "size": "128GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 133006,
+          "weightInGrams": 219,
+          "description": "Oppo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 51,
+      "sku": "OPP-051",
+      "name": "Oppo Model 51",
+      "brand": "Oppo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "OPP-051-128-WHI-0",
+          "size": "128GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 122267,
+          "weightInGrams": 208,
+          "description": "Oppo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "OPP-051-256-BLU-1",
+          "size": "256GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 26441,
+          "weightInGrams": 249,
+          "description": "Oppo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "OPP-051-128-GRA-2",
+          "size": "128GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 46003,
+          "weightInGrams": 189,
+          "description": "Oppo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 52,
+      "sku": "ONE-052",
+      "name": "OnePlus Model 52",
+      "brand": "OnePlus",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "ONE-052-512-GOL-0",
+          "size": "512GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 104725,
+          "weightInGrams": 203,
+          "description": "OnePlus smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 53,
+      "sku": "ONE-053",
+      "name": "OnePlus Model 53",
+      "brand": "OnePlus",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "ONE-053-256-BLU-0",
+          "size": "256GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 113028,
+          "weightInGrams": 243,
+          "description": "OnePlus smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "ONE-053-128-BLU-1",
+          "size": "128GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 127875,
+          "weightInGrams": 189,
+          "description": "OnePlus smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 54,
+      "sku": "REA-054",
+      "name": "Realme Model 54",
+      "brand": "Realme",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "REA-054-256-SIL-0",
+          "size": "256GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 74539,
+          "weightInGrams": 223,
+          "description": "Realme smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "REA-054-128-SIL-1",
+          "size": "128GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 96878,
+          "weightInGrams": 222,
+          "description": "Realme smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 55,
+      "sku": "VIV-055",
+      "name": "Vivo Model 55",
+      "brand": "Vivo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "VIV-055-512-WHI-0",
+          "size": "512GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 67213,
+          "weightInGrams": 207,
+          "description": "Vivo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "VIV-055-256-GOL-1",
+          "size": "256GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 24433,
+          "weightInGrams": 205,
+          "description": "Vivo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 56,
+      "sku": "XIA-056",
+      "name": "Xiaomi Model 56",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-056-128-GOL-0",
+          "size": "128GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 36867,
+          "weightInGrams": 165,
+          "description": "Xiaomi smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "XIA-056-128-GOL-1",
+          "size": "128GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 37603,
+          "weightInGrams": 169,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 57,
+      "sku": "MOT-057",
+      "name": "Motorola Model 57",
+      "brand": "Motorola",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "MOT-057-512-GOL-0",
+          "size": "512GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 17417,
+          "weightInGrams": 184,
+          "description": "Motorola smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "MOT-057-256-GOL-1",
+          "size": "256GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 27019,
+          "weightInGrams": 170,
+          "description": "Motorola smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "MOT-057-128-GRE-2",
+          "size": "128GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 22877,
+          "weightInGrams": 183,
+          "description": "Motorola smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 58,
+      "sku": "MOT-058",
+      "name": "Motorola Model 58",
+      "brand": "Motorola",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "MOT-058-256-BLU-0",
+          "size": "256GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 70225,
+          "weightInGrams": 194,
+          "description": "Motorola smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "MOT-058-128-BLA-1",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 63323,
+          "weightInGrams": 169,
+          "description": "Motorola smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "MOT-058-512-BLA-2",
+          "size": "512GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 112045,
+          "weightInGrams": 175,
+          "description": "Motorola smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 59,
+      "sku": "XIA-059",
+      "name": "Xiaomi Model 59",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-059-128-BLU-0",
+          "size": "128GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 113623,
+          "weightInGrams": 223,
+          "description": "Xiaomi smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "XIA-059-256-BLU-1",
+          "size": "256GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 158797,
+          "weightInGrams": 217,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 60,
+      "sku": "REA-060",
+      "name": "Realme Model 60",
+      "brand": "Realme",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "REA-060-512-GRA-0",
+          "size": "512GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 37288,
+          "weightInGrams": 225,
+          "description": "Realme smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "REA-060-256-WHI-1",
+          "size": "256GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 70686,
+          "weightInGrams": 249,
+          "description": "Realme smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "REA-060-512-BLA-2",
+          "size": "512GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 128582,
+          "weightInGrams": 221,
+          "description": "Realme smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 61,
+      "sku": "ONE-061",
+      "name": "OnePlus Model 61",
+      "brand": "OnePlus",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "ONE-061-512-GOL-0",
+          "size": "512GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 80764,
+          "weightInGrams": 176,
+          "description": "OnePlus smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 62,
+      "sku": "GOO-062",
+      "name": "Google Model 62",
+      "brand": "Google",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "GOO-062-128-BLU-0",
+          "size": "128GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 81440,
+          "weightInGrams": 209,
+          "description": "Google smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 63,
+      "sku": "APP-063",
+      "name": "Apple Model 63",
+      "brand": "Apple",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "APP-063-256-BLA-0",
+          "size": "256GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 141943,
+          "weightInGrams": 204,
+          "description": "Apple smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "APP-063-256-GOL-1",
+          "size": "256GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 31937,
+          "weightInGrams": 228,
+          "description": "Apple smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "APP-063-256-WHI-2",
+          "size": "256GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 72155,
+          "weightInGrams": 221,
+          "description": "Apple smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 64,
+      "sku": "ONE-064",
+      "name": "OnePlus Model 64",
+      "brand": "OnePlus",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "ONE-064-128-SIL-0",
+          "size": "128GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 88517,
+          "weightInGrams": 210,
+          "description": "OnePlus smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "ONE-064-512-BLA-1",
+          "size": "512GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 117721,
+          "weightInGrams": 218,
+          "description": "OnePlus smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "ONE-064-512-GRE-2",
+          "size": "512GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 35983,
+          "weightInGrams": 226,
+          "description": "OnePlus smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 65,
+      "sku": "ONE-065",
+      "name": "OnePlus Model 65",
+      "brand": "OnePlus",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "ONE-065-256-GRE-0",
+          "size": "256GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 145883,
+          "weightInGrams": 236,
+          "description": "OnePlus smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "ONE-065-512-BLU-1",
+          "size": "512GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 92415,
+          "weightInGrams": 238,
+          "description": "OnePlus smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "ONE-065-256-GRA-2",
+          "size": "256GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 149010,
+          "weightInGrams": 229,
+          "description": "OnePlus smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 66,
+      "sku": "ONE-066",
+      "name": "OnePlus Model 66",
+      "brand": "OnePlus",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "ONE-066-512-WHI-0",
+          "size": "512GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 69398,
+          "weightInGrams": 247,
+          "description": "OnePlus smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 67,
+      "sku": "REA-067",
+      "name": "Realme Model 67",
+      "brand": "Realme",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "REA-067-128-GRA-0",
+          "size": "128GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 92637,
+          "weightInGrams": 238,
+          "description": "Realme smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "REA-067-512-BLU-1",
+          "size": "512GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 129917,
+          "weightInGrams": 249,
+          "description": "Realme smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 68,
+      "sku": "OPP-068",
+      "name": "Oppo Model 68",
+      "brand": "Oppo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "OPP-068-512-GRE-0",
+          "size": "512GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 83809,
+          "weightInGrams": 234,
+          "description": "Oppo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "OPP-068-128-GRA-1",
+          "size": "128GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 94425,
+          "weightInGrams": 210,
+          "description": "Oppo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 69,
+      "sku": "XIA-069",
+      "name": "Xiaomi Model 69",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-069-512-BLU-0",
+          "size": "512GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 93348,
+          "weightInGrams": 248,
+          "description": "Xiaomi smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "XIA-069-512-GRE-1",
+          "size": "512GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 145790,
+          "weightInGrams": 175,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 70,
+      "sku": "VIV-070",
+      "name": "Vivo Model 70",
+      "brand": "Vivo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "VIV-070-512-GOL-0",
+          "size": "512GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 82361,
+          "weightInGrams": 184,
+          "description": "Vivo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "VIV-070-128-GOL-1",
+          "size": "128GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 117153,
+          "weightInGrams": 174,
+          "description": "Vivo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 71,
+      "sku": "SAM-071",
+      "name": "Samsung Model 71",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-071-256-SIL-0",
+          "size": "256GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 90444,
+          "weightInGrams": 250,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 72,
+      "sku": "REA-072",
+      "name": "Realme Model 72",
+      "brand": "Realme",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "REA-072-128-GRE-0",
+          "size": "128GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 66482,
+          "weightInGrams": 230,
+          "description": "Realme smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 73,
+      "sku": "OPP-073",
+      "name": "Oppo Model 73",
+      "brand": "Oppo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "OPP-073-128-GOL-0",
+          "size": "128GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 41248,
+          "weightInGrams": 215,
+          "description": "Oppo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "OPP-073-128-GRA-1",
+          "size": "128GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 60976,
+          "weightInGrams": 168,
+          "description": "Oppo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "OPP-073-512-WHI-2",
+          "size": "512GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 129191,
+          "weightInGrams": 189,
+          "description": "Oppo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 74,
+      "sku": "REA-074",
+      "name": "Realme Model 74",
+      "brand": "Realme",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "REA-074-128-GOL-0",
+          "size": "128GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 153471,
+          "weightInGrams": 171,
+          "description": "Realme smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 75,
+      "sku": "XIA-075",
+      "name": "Xiaomi Model 75",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-075-128-GRE-0",
+          "size": "128GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 98199,
+          "weightInGrams": 203,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 76,
+      "sku": "REA-076",
+      "name": "Realme Model 76",
+      "brand": "Realme",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "REA-076-512-GOL-0",
+          "size": "512GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 64227,
+          "weightInGrams": 213,
+          "description": "Realme smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 77,
+      "sku": "SAM-077",
+      "name": "Samsung Model 77",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-077-128-BLA-0",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 144620,
+          "weightInGrams": 198,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 78,
+      "sku": "VIV-078",
+      "name": "Vivo Model 78",
+      "brand": "Vivo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "VIV-078-128-GRA-0",
+          "size": "128GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 139688,
+          "weightInGrams": 216,
+          "description": "Vivo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "VIV-078-512-GRA-1",
+          "size": "512GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 56529,
+          "weightInGrams": 191,
+          "description": "Vivo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "VIV-078-128-GOL-2",
+          "size": "128GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 92551,
+          "weightInGrams": 180,
+          "description": "Vivo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 79,
+      "sku": "REA-079",
+      "name": "Realme Model 79",
+      "brand": "Realme",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "REA-079-512-SIL-0",
+          "size": "512GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 27663,
+          "weightInGrams": 192,
+          "description": "Realme smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "REA-079-128-GOL-1",
+          "size": "128GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 71753,
+          "weightInGrams": 231,
+          "description": "Realme smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 80,
+      "sku": "GOO-080",
+      "name": "Google Model 80",
+      "brand": "Google",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "GOO-080-512-GRE-0",
+          "size": "512GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 39130,
+          "weightInGrams": 219,
+          "description": "Google smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "GOO-080-128-BLU-1",
+          "size": "128GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 21587,
+          "weightInGrams": 242,
+          "description": "Google smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 81,
+      "sku": "ONE-081",
+      "name": "OnePlus Model 81",
+      "brand": "OnePlus",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "ONE-081-256-WHI-0",
+          "size": "256GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 122914,
+          "weightInGrams": 232,
+          "description": "OnePlus smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "ONE-081-256-WHI-1",
+          "size": "256GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 100475,
+          "weightInGrams": 192,
+          "description": "OnePlus smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 82,
+      "sku": "SAM-082",
+      "name": "Samsung Model 82",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-082-256-WHI-0",
+          "size": "256GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 57362,
+          "weightInGrams": 231,
+          "description": "Samsung smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "SAM-082-256-SIL-1",
+          "size": "256GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 114692,
+          "weightInGrams": 229,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 83,
+      "sku": "NOK-083",
+      "name": "Nokia Model 83",
+      "brand": "Nokia",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "NOK-083-256-BLU-0",
+          "size": "256GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 141818,
+          "weightInGrams": 244,
+          "description": "Nokia smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "NOK-083-256-GOL-1",
+          "size": "256GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 121854,
+          "weightInGrams": 216,
+          "description": "Nokia smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 84,
+      "sku": "VIV-084",
+      "name": "Vivo Model 84",
+      "brand": "Vivo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "VIV-084-256-BLU-0",
+          "size": "256GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 37799,
+          "weightInGrams": 249,
+          "description": "Vivo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 85,
+      "sku": "XIA-085",
+      "name": "Xiaomi Model 85",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-085-256-BLU-0",
+          "size": "256GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 140640,
+          "weightInGrams": 176,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 86,
+      "sku": "SAM-086",
+      "name": "Samsung Model 86",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-086-128-GRA-0",
+          "size": "128GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 36960,
+          "weightInGrams": 170,
+          "description": "Samsung smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "SAM-086-256-SIL-1",
+          "size": "256GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 32715,
+          "weightInGrams": 248,
+          "description": "Samsung smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "SAM-086-256-BLA-2",
+          "size": "256GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 148526,
+          "weightInGrams": 233,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 87,
+      "sku": "REA-087",
+      "name": "Realme Model 87",
+      "brand": "Realme",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "REA-087-256-GOL-0",
+          "size": "256GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 100935,
+          "weightInGrams": 170,
+          "description": "Realme smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 88,
+      "sku": "SAM-088",
+      "name": "Samsung Model 88",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-088-128-BLU-0",
+          "size": "128GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 92699,
+          "weightInGrams": 235,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 89,
+      "sku": "XIA-089",
+      "name": "Xiaomi Model 89",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-089-512-SIL-0",
+          "size": "512GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 43868,
+          "weightInGrams": 230,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 90,
+      "sku": "NOK-090",
+      "name": "Nokia Model 90",
+      "brand": "Nokia",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "NOK-090-512-GOL-0",
+          "size": "512GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 65942,
+          "weightInGrams": 229,
+          "description": "Nokia smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 91,
+      "sku": "GOO-091",
+      "name": "Google Model 91",
+      "brand": "Google",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "GOO-091-512-BLA-0",
+          "size": "512GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 113972,
+          "weightInGrams": 235,
+          "description": "Google smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 92,
+      "sku": "SAM-092",
+      "name": "Samsung Model 92",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-092-256-WHI-0",
+          "size": "256GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 46461,
+          "weightInGrams": 214,
+          "description": "Samsung smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "SAM-092-128-SIL-1",
+          "size": "128GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 35544,
+          "weightInGrams": 241,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 93,
+      "sku": "GOO-093",
+      "name": "Google Model 93",
+      "brand": "Google",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "GOO-093-256-GOL-0",
+          "size": "256GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 140013,
+          "weightInGrams": 214,
+          "description": "Google smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "GOO-093-512-BLA-1",
+          "size": "512GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 80684,
+          "weightInGrams": 212,
+          "description": "Google smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "GOO-093-128-SIL-2",
+          "size": "128GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 47113,
+          "weightInGrams": 180,
+          "description": "Google smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 94,
+      "sku": "REA-094",
+      "name": "Realme Model 94",
+      "brand": "Realme",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "REA-094-256-GRA-0",
+          "size": "256GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 40416,
+          "weightInGrams": 206,
+          "description": "Realme smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "REA-094-128-SIL-1",
+          "size": "128GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 61588,
+          "weightInGrams": 204,
+          "description": "Realme smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "REA-094-256-GRE-2",
+          "size": "256GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 89547,
+          "weightInGrams": 240,
+          "description": "Realme smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 95,
+      "sku": "SAM-095",
+      "name": "Samsung Model 95",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-095-512-SIL-0",
+          "size": "512GB",
+          "color": "Silver",
+          "configuration": "Standard",
+          "price": 155811,
+          "weightInGrams": 196,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 96,
+      "sku": "VIV-096",
+      "name": "Vivo Model 96",
+      "brand": "Vivo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "VIV-096-128-GOL-0",
+          "size": "128GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 129639,
+          "weightInGrams": 220,
+          "description": "Vivo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "VIV-096-256-WHI-1",
+          "size": "256GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 133818,
+          "weightInGrams": 228,
+          "description": "Vivo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 97,
+      "sku": "OPP-097",
+      "name": "Oppo Model 97",
+      "brand": "Oppo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "OPP-097-128-WHI-0",
+          "size": "128GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 70010,
+          "weightInGrams": 244,
+          "description": "Oppo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "OPP-097-512-GRE-1",
+          "size": "512GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 108203,
+          "weightInGrams": 243,
+          "description": "Oppo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "OPP-097-512-GOL-2",
+          "size": "512GB",
+          "color": "Gold",
+          "configuration": "Standard",
+          "price": 148970,
+          "weightInGrams": 182,
+          "description": "Oppo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 98,
+      "sku": "NOK-098",
+      "name": "Nokia Model 98",
+      "brand": "Nokia",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "NOK-098-256-BLA-0",
+          "size": "256GB",
+          "color": "Black",
+          "configuration": "Standard",
+          "price": 20100,
+          "weightInGrams": 224,
+          "description": "Nokia smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "NOK-098-256-GRE-1",
+          "size": "256GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 156164,
+          "weightInGrams": 245,
+          "description": "Nokia smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "NOK-098-512-WHI-2",
+          "size": "512GB",
+          "color": "White",
+          "configuration": "Standard",
+          "price": 38858,
+          "weightInGrams": 187,
+          "description": "Nokia smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 99,
+      "sku": "VIV-099",
+      "name": "Vivo Model 99",
+      "brand": "Vivo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "VIV-099-256-GRA-0",
+          "size": "256GB",
+          "color": "Gray",
+          "configuration": "Standard",
+          "price": 77305,
+          "weightInGrams": 189,
+          "description": "Vivo smartphone",
+          "active": true
+        },
+        {
+          "variantSku": "VIV-099-256-BLU-1",
+          "size": "256GB",
+          "color": "Blue",
+          "configuration": "Standard",
+          "price": 80531,
+          "weightInGrams": 168,
+          "description": "Vivo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 100,
+      "sku": "OPP-100",
+      "name": "Oppo Model 100",
+      "brand": "Oppo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "OPP-100-256-GRE-0",
+          "size": "256GB",
+          "color": "Green",
+          "configuration": "Standard",
+          "price": 84818,
+          "weightInGrams": 221,
+          "description": "Oppo smartphone",
+          "active": true
+        }
+      ]
+    }
+  ]
+}
