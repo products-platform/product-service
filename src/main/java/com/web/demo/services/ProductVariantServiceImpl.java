@@ -32,7 +32,6 @@ public class ProductVariantServiceImpl implements ProductVariantService {
         variant.setColor(request.color());
         variant.setConfiguration(request.configuration());
         variant.setPrice(request.price());
-        variant.setStock(request.stock());
         variant.setProduct(product);
 
         return variantRepository.save(variant);

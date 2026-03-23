@@ -70,44 +70,22 @@ public class ProductServiceImpl implements ProductService {
                         new ResourceNotFoundException("Customer not found with id: " + id));
     }
 
-    @CachePut(value = "products", key = "#result.id")
-    public ProductResponse create1(ProductRequest request) {
-        if (productRepository.existsBySku(request.sku())) {
-            throw new DuplicateResourceException("SKU already exists");
-        }
-
-        Product product = productRepository.save(Product.builder()
-                .sku(request.sku())
-                .name(request.name())
-                .brand(request.brand())
-                .category(request.category())
-                .price(request.price())
-                .weightInGrams(request.weightInGrams())
-                .description(request.description())
-                .active(true)
-                .build());
-
-        // Publish event after save
-        //producer.publishProductCreated(product.getProductId(), product.getName());
-
-        return mapToResponse(product);
-    }
-
     // ✅ CREATE PRODUCT
+    //@CachePut(value = "products", key = "#result.id")
     @Override
     public ProductResponse create(ProductRequest request) {
         Product product = productMapper.buildEntity(request);
-
         // ✅ Save to DB
         productRepository.save(product);
 
         // Publish event after save
-        producer.publishProductCreated(product);
+        //producer.publishProductCreated(product);
 
         // ✅ Index to Elasticsearch
-        //indexToElastic(product);
+        indexToElastic(product);
         return mapToResponse(product);
     }
+
     private void indexToElastic(Product product) {
         ProductDocument document = productMapper.toDocument(product);
         searchRepository.save(document);
@@ -122,9 +100,6 @@ public class ProductServiceImpl implements ProductService {
         product.setName(request.name());
         product.setBrand(request.brand());
         product.setCategory(request.category());
-        product.setPrice(request.price());
-        product.setWeightInGrams(request.weightInGrams());
-        product.setDescription(request.description());
 
         return mapToResponse(product);
     }
@@ -200,10 +175,7 @@ public class ProductServiceImpl implements ProductService {
                 product.getName(),
                 product.getBrand(),
                 product.getCategory(),
-                product.getPrice(),
-                product.getWeightInGrams(),
                 product.getActive(),
-                product.getDescription(),
                 product.getCreatedAt(),
                 product.getUpdatedAt()
         );

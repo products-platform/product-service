@@ -94,7 +94,7 @@ public class ProductSearchRepositoryImpl implements ProductSearchRepository {
             b.filter(f -> f.term(t -> t.field("category").value(req.category())));
         }
 
-        if (req.minPrice() != null || req.maxPrice() != null) {
+        /*if (req.minPrice() != null || req.maxPrice() != null) {
             b.filter(f -> f.range(r -> r
                     .number(n -> {
                         n.field("price");
@@ -110,7 +110,7 @@ public class ProductSearchRepositoryImpl implements ProductSearchRepository {
                         return n;
                     })
             ));
-        }
+        }*/
     }
 
     private void applyVariantFilters(

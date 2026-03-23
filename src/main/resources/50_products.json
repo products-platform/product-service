@@ -1,0 +1,1004 @@
+{
+  "products": [
+    {
+      "productId": 1,
+      "sku": "SAM-001",
+      "name": "Galaxy S 1",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-001-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Galaxy S 1",
+          "price": 51000,
+          "weightInGrams": 151,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 2,
+      "sku": "ONE-002",
+      "name": "Galaxy Note 2",
+      "brand": "OnePlus",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "ONE-002-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Galaxy Note 2",
+          "price": 52000,
+          "weightInGrams": 152,
+          "description": "OnePlus smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 3,
+      "sku": "XIA-003",
+      "name": "OnePlus 3",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-003-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "OnePlus 3",
+          "price": 53000,
+          "weightInGrams": 153,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 4,
+      "sku": "GOO-004",
+      "name": "Xiaomi 4",
+      "brand": "Google",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "GOO-004-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Xiaomi 4",
+          "price": 54000,
+          "weightInGrams": 154,
+          "description": "Google smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 5,
+      "sku": "VIV-005",
+      "name": "Pixel 5",
+      "brand": "Vivo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "VIV-005-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Pixel 5",
+          "price": 55000,
+          "weightInGrams": 155,
+          "description": "Vivo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 6,
+      "sku": "OPP-006",
+      "name": "Vivo X 6",
+      "brand": "Oppo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "OPP-006-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Vivo X 6",
+          "price": 56000,
+          "weightInGrams": 156,
+          "description": "Oppo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 7,
+      "sku": "APP-007",
+      "name": "Oppo Find 7",
+      "brand": "Apple",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "APP-007-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Oppo Find 7",
+          "price": 57000,
+          "weightInGrams": 157,
+          "description": "Apple smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 8,
+      "sku": "SAM-008",
+      "name": "iPhone 8",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-008-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "iPhone 8",
+          "price": 58000,
+          "weightInGrams": 158,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 9,
+      "sku": "ONE-009",
+      "name": "Galaxy S 9",
+      "brand": "OnePlus",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "ONE-009-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Galaxy S 9",
+          "price": 59000,
+          "weightInGrams": 159,
+          "description": "OnePlus smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 10,
+      "sku": "XIA-010",
+      "name": "Galaxy Note 10",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-010-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Galaxy Note 10",
+          "price": 60000,
+          "weightInGrams": 160,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 11,
+      "sku": "GOO-011",
+      "name": "OnePlus 11",
+      "brand": "Google",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "GOO-011-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "OnePlus 11",
+          "price": 61000,
+          "weightInGrams": 161,
+          "description": "Google smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 12,
+      "sku": "VIV-012",
+      "name": "Xiaomi 12",
+      "brand": "Vivo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "VIV-012-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Xiaomi 12",
+          "price": 62000,
+          "weightInGrams": 162,
+          "description": "Vivo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 13,
+      "sku": "OPP-013",
+      "name": "Pixel 13",
+      "brand": "Oppo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "OPP-013-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Pixel 13",
+          "price": 63000,
+          "weightInGrams": 163,
+          "description": "Oppo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 14,
+      "sku": "APP-014",
+      "name": "Vivo X 14",
+      "brand": "Apple",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "APP-014-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Vivo X 14",
+          "price": 64000,
+          "weightInGrams": 164,
+          "description": "Apple smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 15,
+      "sku": "SAM-015",
+      "name": "Oppo Find 15",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-015-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Oppo Find 15",
+          "price": 65000,
+          "weightInGrams": 165,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 16,
+      "sku": "ONE-016",
+      "name": "iPhone 16",
+      "brand": "OnePlus",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "ONE-016-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "iPhone 16",
+          "price": 66000,
+          "weightInGrams": 166,
+          "description": "OnePlus smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 17,
+      "sku": "XIA-017",
+      "name": "Galaxy S 17",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-017-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Galaxy S 17",
+          "price": 67000,
+          "weightInGrams": 167,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 18,
+      "sku": "GOO-018",
+      "name": "Galaxy Note 18",
+      "brand": "Google",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "GOO-018-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Galaxy Note 18",
+          "price": 68000,
+          "weightInGrams": 168,
+          "description": "Google smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 19,
+      "sku": "VIV-019",
+      "name": "OnePlus 19",
+      "brand": "Vivo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "VIV-019-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "OnePlus 19",
+          "price": 69000,
+          "weightInGrams": 169,
+          "description": "Vivo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 20,
+      "sku": "OPP-020",
+      "name": "Xiaomi 20",
+      "brand": "Oppo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "OPP-020-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Xiaomi 20",
+          "price": 70000,
+          "weightInGrams": 170,
+          "description": "Oppo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 21,
+      "sku": "APP-021",
+      "name": "Pixel 21",
+      "brand": "Apple",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "APP-021-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Pixel 21",
+          "price": 71000,
+          "weightInGrams": 171,
+          "description": "Apple smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 22,
+      "sku": "SAM-022",
+      "name": "Vivo X 22",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-022-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Vivo X 22",
+          "price": 72000,
+          "weightInGrams": 172,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 23,
+      "sku": "ONE-023",
+      "name": "Oppo Find 23",
+      "brand": "OnePlus",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "ONE-023-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Oppo Find 23",
+          "price": 73000,
+          "weightInGrams": 173,
+          "description": "OnePlus smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 24,
+      "sku": "XIA-024",
+      "name": "iPhone 24",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-024-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "iPhone 24",
+          "price": 74000,
+          "weightInGrams": 174,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 25,
+      "sku": "GOO-025",
+      "name": "Galaxy S 25",
+      "brand": "Google",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "GOO-025-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Galaxy S 25",
+          "price": 75000,
+          "weightInGrams": 175,
+          "description": "Google smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 26,
+      "sku": "VIV-026",
+      "name": "Galaxy Note 26",
+      "brand": "Vivo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "VIV-026-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Galaxy Note 26",
+          "price": 76000,
+          "weightInGrams": 176,
+          "description": "Vivo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 27,
+      "sku": "OPP-027",
+      "name": "OnePlus 27",
+      "brand": "Oppo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "OPP-027-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "OnePlus 27",
+          "price": 77000,
+          "weightInGrams": 177,
+          "description": "Oppo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 28,
+      "sku": "APP-028",
+      "name": "Xiaomi 28",
+      "brand": "Apple",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "APP-028-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Xiaomi 28",
+          "price": 78000,
+          "weightInGrams": 178,
+          "description": "Apple smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 29,
+      "sku": "SAM-029",
+      "name": "Pixel 29",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-029-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Pixel 29",
+          "price": 79000,
+          "weightInGrams": 179,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 30,
+      "sku": "ONE-030",
+      "name": "Vivo X 30",
+      "brand": "OnePlus",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "ONE-030-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Vivo X 30",
+          "price": 80000,
+          "weightInGrams": 180,
+          "description": "OnePlus smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 31,
+      "sku": "XIA-031",
+      "name": "Oppo Find 31",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-031-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Oppo Find 31",
+          "price": 81000,
+          "weightInGrams": 181,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 32,
+      "sku": "GOO-032",
+      "name": "iPhone 32",
+      "brand": "Google",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "GOO-032-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "iPhone 32",
+          "price": 82000,
+          "weightInGrams": 182,
+          "description": "Google smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 33,
+      "sku": "VIV-033",
+      "name": "Galaxy S 33",
+      "brand": "Vivo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "VIV-033-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Galaxy S 33",
+          "price": 83000,
+          "weightInGrams": 183,
+          "description": "Vivo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 34,
+      "sku": "OPP-034",
+      "name": "Galaxy Note 34",
+      "brand": "Oppo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "OPP-034-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Galaxy Note 34",
+          "price": 84000,
+          "weightInGrams": 184,
+          "description": "Oppo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 35,
+      "sku": "APP-035",
+      "name": "OnePlus 35",
+      "brand": "Apple",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "APP-035-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "OnePlus 35",
+          "price": 85000,
+          "weightInGrams": 185,
+          "description": "Apple smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 36,
+      "sku": "SAM-036",
+      "name": "Xiaomi 36",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-036-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Xiaomi 36",
+          "price": 86000,
+          "weightInGrams": 186,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 37,
+      "sku": "ONE-037",
+      "name": "Pixel 37",
+      "brand": "OnePlus",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "ONE-037-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Pixel 37",
+          "price": 87000,
+          "weightInGrams": 187,
+          "description": "OnePlus smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 38,
+      "sku": "XIA-038",
+      "name": "Vivo X 38",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-038-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Vivo X 38",
+          "price": 88000,
+          "weightInGrams": 188,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 39,
+      "sku": "GOO-039",
+      "name": "Oppo Find 39",
+      "brand": "Google",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "GOO-039-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Oppo Find 39",
+          "price": 89000,
+          "weightInGrams": 189,
+          "description": "Google smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 40,
+      "sku": "VIV-040",
+      "name": "iPhone 40",
+      "brand": "Vivo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "VIV-040-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "iPhone 40",
+          "price": 90000,
+          "weightInGrams": 190,
+          "description": "Vivo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 41,
+      "sku": "OPP-041",
+      "name": "Galaxy S 41",
+      "brand": "Oppo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "OPP-041-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Galaxy S 41",
+          "price": 91000,
+          "weightInGrams": 191,
+          "description": "Oppo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 42,
+      "sku": "APP-042",
+      "name": "Galaxy Note 42",
+      "brand": "Apple",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "APP-042-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Galaxy Note 42",
+          "price": 92000,
+          "weightInGrams": 192,
+          "description": "Apple smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 43,
+      "sku": "SAM-043",
+      "name": "OnePlus 43",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-043-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "OnePlus 43",
+          "price": 93000,
+          "weightInGrams": 193,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 44,
+      "sku": "ONE-044",
+      "name": "Xiaomi 44",
+      "brand": "OnePlus",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "ONE-044-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Xiaomi 44",
+          "price": 94000,
+          "weightInGrams": 194,
+          "description": "OnePlus smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 45,
+      "sku": "XIA-045",
+      "name": "Pixel 45",
+      "brand": "Xiaomi",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "XIA-045-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Pixel 45",
+          "price": 95000,
+          "weightInGrams": 195,
+          "description": "Xiaomi smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 46,
+      "sku": "GOO-046",
+      "name": "Vivo X 46",
+      "brand": "Google",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "GOO-046-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Vivo X 46",
+          "price": 96000,
+          "weightInGrams": 196,
+          "description": "Google smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 47,
+      "sku": "VIV-047",
+      "name": "Oppo Find 47",
+      "brand": "Vivo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "VIV-047-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Oppo Find 47",
+          "price": 97000,
+          "weightInGrams": 197,
+          "description": "Vivo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 48,
+      "sku": "OPP-048",
+      "name": "iPhone 48",
+      "brand": "Oppo",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "OPP-048-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "iPhone 48",
+          "price": 98000,
+          "weightInGrams": 198,
+          "description": "Oppo smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 49,
+      "sku": "APP-049",
+      "name": "Galaxy S 49",
+      "brand": "Apple",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "APP-049-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Galaxy S 49",
+          "price": 99000,
+          "weightInGrams": 199,
+          "description": "Apple smartphone",
+          "active": true
+        }
+      ]
+    },
+    {
+      "productId": 50,
+      "sku": "SAM-050",
+      "name": "Galaxy Note 50",
+      "brand": "Samsung",
+      "category": "Smartphone",
+      "active": true,
+      "variants": [
+        {
+          "variantSku": "SAM-050-128-BLK",
+          "size": "128GB",
+          "color": "Black",
+          "configuration": "Galaxy Note 50",
+          "price": 100000,
+          "weightInGrams": 150,
+          "description": "Samsung smartphone",
+          "active": true
+        }
+      ]
+    }
+  ]
+}

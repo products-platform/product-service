@@ -1,58 +1,81 @@
 plugins {
-	id 'java'
-	id 'org.springframework.boot' version '4.0.2'
-	id 'io.spring.dependency-management' version '1.1.7'
+    id 'java'
+    id 'org.springframework.boot' version '3.2.5'
+    id 'io.spring.dependency-management' version '1.1.4'
 }
 
 group = 'com.web.demo'
 version = '0.0.1-SNAPSHOT'
-description = 'Demo project for Spring Boot'
 
 java {
-	toolchain {
-		languageVersion = JavaLanguageVersion.of(17)
-	}
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
 }
 
 repositories {
     mavenLocal()
-	mavenCentral()
+    mavenCentral()
 }
 
 ext {
-	set('springCloudVersion', "2025.1.0")
+    set('springCloudVersion', "2023.0.1") // ✅ COMPATIBLE WITH BOOT 3.2
 }
 
 dependencies {
+
+    // 🌐 WEB
+    implementation 'org.springframework.boot:spring-boot-starter-web'
+
+    // 🗄️ JPA
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
-    implementation 'org.springframework.boot:spring-boot-starter-kafka'
-	implementation 'org.springframework.boot:spring-boot-starter-webflux'
-	implementation 'org.springframework.boot:spring-boot-starter-webmvc'
-	implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
-    implementation 'org.springframework.cloud:spring-cloud-starter-config'
-    implementation 'org.springframework.boot:spring-boot-starter-actuator'
-    implementation "org.springframework.boot:spring-boot-starter-data-elasticsearch"
-    implementation 'io.micrometer:micrometer-tracing-bridge-brave'
-    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
-    implementation 'net.logstash.logback:logstash-logback-encoder:7.4'
-    implementation 'com.web.utils:common-util:1.0-SNAPSHOT'
+
+    // 🔍 ELASTICSEARCH
+    implementation 'org.springframework.boot:spring-boot-starter-data-elasticsearch'
+
+    // 📩 KAFKA (CORRECT ONE)
+    implementation 'org.springframework.kafka:spring-kafka'
+
+    // 🔁 REDIS
     implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+    // 📊 ACTUATOR
+    implementation 'org.springframework.boot:spring-boot-starter-actuator'
+
+    // 🌩️ CLOUD
+    implementation 'org.springframework.cloud:spring-cloud-starter-netflix-eureka-client'
+    implementation 'org.springframework.cloud:spring-cloud-starter-config'
+
+    // 📄 OPENAPI
+    implementation 'org.springdoc:springdoc-openapi-starter-webmvc-ui:2.5.0'
+
+    // 📊 LOGGING
+    implementation 'net.logstash.logback:logstash-logback-encoder:7.4'
+
+    // 🔍 TRACING
+    implementation 'io.micrometer:micrometer-tracing-bridge-brave'
+
+    // 🔧 INTERNAL LIB
+    implementation 'com.web.utils:common-util:1.0-SNAPSHOT'
+
+    // 🗄️ DB
     runtimeOnly 'com.oracle.database.jdbc:ojdbc11'
+
+    // 🧩 LOMBOK
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
-    testImplementation 'org.springframework.boot:spring-boot-starter-data-jpa-test'
-    testImplementation 'org.springframework.boot:spring-boot-starter-kafka-test'
-	testImplementation 'org.springframework.boot:spring-boot-starter-webflux-test'
-	testImplementation 'org.springframework.boot:spring-boot-starter-webmvc-test'
-	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+    // 🧪 TEST
+    testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation 'org.springframework.kafka:spring-kafka-test'
 }
 
 dependencyManagement {
-	imports {
-		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
-	}
+    imports {
+        mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+    }
 }
 
 tasks.named('test') {
-	useJUnitPlatform()
+    useJUnitPlatform()
 }

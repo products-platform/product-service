@@ -1,5 +1,7 @@
 package com.web.demo.producer;
 
+import com.fasterxml.jackson.core.JsonProcessingException;
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.product.dtos.InventoryCreateEvent;
 import com.product.dtos.InventoryVariantStock;
 import com.product.topics.KafkaTopicConstants;
@@ -7,7 +9,6 @@ import com.web.demo.models.Product;
 import lombok.RequiredArgsConstructor;
 import org.springframework.kafka.core.KafkaTemplate;
 import org.springframework.stereotype.Service;
-import tools.jackson.databind.ObjectMapper;
 
 import java.util.List;
 import java.util.UUID;
@@ -19,7 +20,7 @@ public class ProductEventProducer {
     private final KafkaTemplate<String, String> kafkaTemplate;
     private final ObjectMapper objectMapper;
 
-    public void publishProductCreated(Product product) {
+    public void publishProductCreated(Product product) throws JsonProcessingException {
         InventoryCreateEvent inventoryCreateEvent = toInventoryEvent(product);
         String inventoryCreateJson = objectMapper.writeValueAsString(inventoryCreateEvent);
 
@@ -32,7 +33,7 @@ public class ProductEventProducer {
                         v.getSize(),
                         v.getColor(),
                         v.getConfiguration(),
-                        v.getStock()
+                        10
                 ))
                 .toList();
 

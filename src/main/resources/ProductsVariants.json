@@ -6,37 +6,47 @@
       "name": "iPhone 14",
       "brand": "Apple",
       "category": "Smartphone",
-      "price": 79900,
-      "weightInGrams": 172,
-      "description": "Apple iPhone 14 series",
+      "active": true,
       "variants": [
         {
+          "variantSku": "APL-IP14-128-BLK",
           "size": "128GB",
           "color": "Black",
           "configuration": "iPhone 14",
           "price": 79900,
-          "stock": 50
+          "weightInGrams": 172,
+          "description": "Apple iPhone 14 series",
+          "active": true
         },
         {
+          "variantSku": "APL-IP14-256-BLU",
           "size": "256GB",
           "color": "Blue",
           "configuration": "iPhone 14",
           "price": 89900,
-          "stock": 40
+          "weightInGrams": 172,
+          "description": "Apple iPhone 14 series",
+          "active": true
         },
         {
+          "variantSku": "APL-IP14-128-SLV",
           "size": "128GB",
           "color": "Silver",
           "configuration": "iPhone 14 Pro",
           "price": 119900,
-          "stock": 30
+          "weightInGrams": 172,
+          "description": "Apple iPhone 14 series",
+          "active": true
         },
         {
+          "variantSku": "APL-IP14-512-GLD",
           "size": "512GB",
           "color": "Gold",
           "configuration": "iPhone 14 Pro Max",
           "price": 149900,
-          "stock": 20
+          "weightInGrams": 172,
+          "description": "Apple iPhone 14 series",
+          "active": true
         }
       ]
     },
@@ -45,23 +55,27 @@
       "name": "iPhone 15",
       "brand": "Apple",
       "category": "Smartphone",
-      "price": 89900,
-      "weightInGrams": 171,
-      "description": "Apple iPhone 15 series",
+      "active": true,
       "variants": [
         {
+          "variantSku": "APL-IP15-128-PNK",
           "size": "128GB",
           "color": "Pink",
           "configuration": "iPhone 15",
           "price": 89900,
-          "stock": 45
+          "weightInGrams": 171,
+          "description": "Apple iPhone 15 series",
+          "active": true
         },
         {
+          "variantSku": "APL-IP15-256-BLK",
           "size": "256GB",
           "color": "Black",
           "configuration": "iPhone 15 Pro",
           "price": 129900,
-          "stock": 25
+          "weightInGrams": 171,
+          "description": "Apple iPhone 15 series",
+          "active": true
         }
       ]
     },
@@ -71,23 +85,27 @@
       "name": "Galaxy S23",
       "brand": "Samsung",
       "category": "Smartphone",
-      "price": 74999,
-      "weightInGrams": 168,
-      "description": "Samsung flagship",
+      "active": true,
       "variants": [
         {
+          "variantSku": "SMS-S23-128-BLK",
           "size": "128GB",
           "color": "Black",
           "configuration": "S23",
           "price": 74999,
-          "stock": 50
+          "weightInGrams": 168,
+          "description": "Samsung flagship",
+          "active": true
         },
         {
+          "variantSku": "SMS-S23-256-GRN",
           "size": "256GB",
           "color": "Green",
           "configuration": "S23+",
           "price": 84999,
-          "stock": 40
+          "weightInGrams": 168,
+          "description": "Samsung flagship",
+          "active": true
         }
       ]
     },
@@ -97,365 +115,17 @@
       "name": "Galaxy Z Fold 5",
       "brand": "Samsung",
       "category": "Smartphone",
-      "price": 154999,
-      "weightInGrams": 253,
-      "description": "Foldable flagship",
+      "active": true,
       "variants": [
         {
+          "variantSku": "SMS-FOLD5-256-BLU",
           "size": "256GB",
           "color": "Blue",
           "configuration": "Fold",
           "price": 154999,
-          "stock": 15
-        }
-      ]
-    },
-    {
-      "productId": 20,
-      "sku": "ONE-11",
-      "name": "OnePlus 11",
-      "brand": "OnePlus",
-      "category": "Smartphone",
-      "price": 56999,
-      "weightInGrams": 205,
-      "description": "Flagship killer",
-      "variants": [
-        {
-          "size": "128GB",
-          "color": "Black",
-          "configuration": "Standard",
-          "price": 56999,
-          "stock": 45
-        },
-        {
-          "size": "256GB",
-          "color": "Green",
-          "configuration": "Pro",
-          "price": 61999,
-          "stock": 30
-        }
-      ]
-    },
-    {
-      "productId": 30,
-      "sku": "GOO-PX8",
-      "name": "Pixel 8",
-      "brand": "Google",
-      "category": "Smartphone",
-      "price": 75999,
-      "weightInGrams": 187,
-      "description": "Google AI phone",
-      "variants": [
-        {
-          "size": "128GB",
-          "color": "Obsidian",
-          "configuration": "Pixel 8",
-          "price": 75999,
-          "stock": 20
-        }
-      ]
-    },
-    {
-      "productId": 40,
-      "sku": "XMI-14",
-      "name": "Xiaomi 14",
-      "brand": "Xiaomi",
-      "category": "Smartphone",
-      "price": 69999,
-      "weightInGrams": 193,
-      "description": "Latest Xiaomi flagship",
-      "variants": [
-        {
-          "size": "256GB",
-          "color": "White",
-          "configuration": "Pro",
-          "price": 69999,
-          "stock": 35
-        }
-      ]
-    },
-    {
-      "productId": 50,
-      "sku": "RLM-GT2",
-      "name": "Realme GT 2 Pro",
-      "brand": "Realme",
-      "category": "Smartphone",
-      "price": 38999,
-      "weightInGrams": 189,
-      "description": "Performance phone",
-      "variants": [
-        {
-          "size": "256GB",
-          "color": "Green",
-          "configuration": "Pro",
-          "price": 38999,
-          "stock": 40
-        }
-      ]
-    },
-    {
-      "productId": 60,
-      "sku": "OPP-R11",
-      "name": "Oppo Reno 11",
-      "brand": "Oppo",
-      "category": "Smartphone",
-      "price": 32999,
-      "weightInGrams": 182,
-      "description": "Stylish midrange",
-      "variants": [
-        {
-          "size": "128GB",
-          "color": "Purple",
-          "configuration": "Standard",
-          "price": 32999,
-          "stock": 30
-        }
-      ]
-    },
-    {
-      "productId": 70,
-      "sku": "VIV-V29",
-      "name": "Vivo V29",
-      "brand": "Vivo",
-      "category": "Smartphone",
-      "price": 31999,
-      "weightInGrams": 186,
-      "description": "Camera focused",
-      "variants": [
-        {
-          "size": "128GB",
-          "color": "Blue",
-          "configuration": "Standard",
-          "price": 31999,
-          "stock": 25
-        }
-      ]
-    },
-    {
-      "productId": 80,
-      "sku": "MOT-EDGE40",
-      "name": "Motorola Edge 40",
-      "brand": "Motorola",
-      "category": "Smartphone",
-      "price": 29999,
-      "weightInGrams": 171,
-      "description": "Clean Android",
-      "variants": [
-        {
-          "size": "128GB",
-          "color": "Black",
-          "configuration": "Standard",
-          "price": 29999,
-          "stock": 35
-        }
-      ]
-    },
-    {
-      "productId": 90,
-      "sku": "NOK-G42",
-      "name": "Nokia G42",
-      "brand": "Nokia",
-      "category": "Smartphone",
-      "price": 15999,
-      "weightInGrams": 193,
-      "description": "Budget durable",
-      "variants": [
-        {
-          "size": "128GB",
-          "color": "Grey",
-          "configuration": "Standard",
-          "price": 15999,
-          "stock": 50
-        }
-      ]
-    },
-    {
-      "productId": 100,
-      "sku": "SONY-X1",
-      "name": "Xperia 1 V",
-      "brand": "Sony",
-      "category": "Smartphone",
-      "price": 129999,
-      "weightInGrams": 187,
-      "description": "Sony flagship",
-      "variants": [
-        {
-          "size": "256GB",
-          "color": "Black",
-          "configuration": "Standard",
-          "price": 129999,
-          "stock": 10
-        }
-      ]
-    },
-    {
-      "productId": 110,
-      "sku": "ASUS-ROG7",
-      "name": "ROG Phone 7",
-      "brand": "Asus",
-      "category": "Smartphone",
-      "price": 74999,
-      "weightInGrams": 239,
-      "description": "Gaming beast",
-      "variants": [
-        {
-          "size": "256GB",
-          "color": "White",
-          "configuration": "Ultimate",
-          "price": 74999,
-          "stock": 20
-        }
-      ]
-    },
-    {
-      "productId": 120,
-      "sku": "HUA-P60",
-      "name": "P60 Pro",
-      "brand": "Huawei",
-      "category": "Smartphone",
-      "price": 89999,
-      "weightInGrams": 200,
-      "description": "Huawei premium",
-      "variants": [
-        {
-          "size": "256GB",
-          "color": "Gold",
-          "configuration": "Pro",
-          "price": 89999,
-          "stock": 15
-        }
-      ]
-    },
-    {
-      "productId": 130,
-      "sku": "HON-90",
-      "name": "Honor 90",
-      "brand": "Honor",
-      "category": "Smartphone",
-      "price": 37999,
-      "weightInGrams": 183,
-      "description": "Honor stylish phone",
-      "variants": [
-        {
-          "size": "256GB",
-          "color": "Green",
-          "configuration": "Standard",
-          "price": 37999,
-          "stock": 25
-        }
-      ]
-    },
-    {
-      "productId": 140,
-      "sku": "INF-ZERO",
-      "name": "Infinix Zero Ultra",
-      "brand": "Infinix",
-      "category": "Smartphone",
-      "price": 29999,
-      "weightInGrams": 198,
-      "description": "Fast charging phone",
-      "variants": [
-        {
-          "size": "256GB",
-          "color": "Orange",
-          "configuration": "Ultra",
-          "price": 29999,
-          "stock": 40
-        }
-      ]
-    },
-    {
-      "productId": 150,
-      "sku": "TEC-PHANTOM",
-      "name": "Tecno Phantom X2",
-      "brand": "Tecno",
-      "category": "Smartphone",
-      "price": 26999,
-      "weightInGrams": 210,
-      "description": "Budget flagship",
-      "variants": [
-        {
-          "size": "128GB",
-          "color": "Blue",
-          "configuration": "Standard",
-          "price": 26999,
-          "stock": 35
-        }
-      ]
-    },
-    {
-      "productId": 160,
-      "sku": "LAVA-AGNI",
-      "name": "Lava Agni 2",
-      "brand": "Lava",
-      "category": "Smartphone",
-      "price": 21999,
-      "weightInGrams": 195,
-      "description": "Indian brand",
-      "variants": [
-        {
-          "size": "256GB",
-          "color": "Black",
-          "configuration": "Standard",
-          "price": 21999,
-          "stock": 30
-        }
-      ]
-    },
-    {
-      "productId": 170,
-      "sku": "MIC-INNOTE",
-      "name": "Micromax In Note 2",
-      "brand": "Micromax",
-      "category": "Smartphone",
-      "price": 13999,
-      "weightInGrams": 205,
-      "description": "Budget phone",
-      "variants": [
-        {
-          "size": "64GB",
-          "color": "Black",
-          "configuration": "Standard",
-          "price": 13999,
-          "stock": 50
-        }
-      ]
-    },
-    {
-      "productId": 180,
-      "sku": "LEN-LEGION",
-      "name": "Legion Phone Duel",
-      "brand": "Lenovo",
-      "category": "Smartphone",
-      "price": 49999,
-      "weightInGrams": 239,
-      "description": "Gaming phone",
-      "variants": [
-        {
-          "size": "256GB",
-          "color": "Red",
-          "configuration": "Pro",
-          "price": 49999,
-          "stock": 20
-        }
-      ]
-    },
-    {
-      "productId": 190,
-      "sku": "NOTHING-2",
-      "name": "Nothing Phone 2",
-      "brand": "Nothing",
-      "category": "Smartphone",
-      "price": 44999,
-      "weightInGrams": 201,
-      "description": "Transparent design",
-      "variants": [
-        {
-          "size": "256GB",
-          "color": "White",
-          "configuration": "Standard",
-          "price": 44999,
-          "stock": 30
+          "weightInGrams": 253,
+          "description": "Foldable flagship",
+          "active": true
         }
       ]
     }

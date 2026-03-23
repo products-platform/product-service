@@ -12,44 +12,49 @@ import java.util.List;
 @Component
 public class ProductMapperImpl implements ProductMapper {
 
-    public Product buildEntity(ProductRequest request) {
-        Product product = new Product();
-        product.setProductId(request.productId());
-        product.setSku(request.sku());
-        product.setName(request.name());
-        product.setBrand(request.brand());
-        product.setCategory(request.category());
-        product.setPrice(request.price());
-        product.setWeightInGrams(request.weightInGrams());
-        product.setDescription(request.description());
+    @Override
+    public Product buildEntity(ProductRequest dto) {
+        if (dto == null) return null;
 
-        List<ProductVariant> variants = request.variants().stream()
-                .map(v -> {
-                    ProductVariant pv = new ProductVariant();
-                    pv.setSize(v.size());
-                    pv.setColor(v.color());
-                    pv.setConfiguration(v.configuration());
-                    pv.setPrice(v.price());
-                    pv.setStock(v.stock());
-                    pv.setProduct(product);
-                    return pv;
-                }).toList();
+        Product product = Product.builder()
+                .sku(dto.sku())
+                .name(dto.name())
+                .brand(dto.brand())
+                .category(dto.category())
+                .active(true)
+                .build();
 
-        product.setVariants(variants);
+        if (dto.variants() != null) {
+            List<ProductVariant> variantList = dto.variants().stream()
+                    .map(variantDto -> ProductVariant.builder()
+                            .variantSku(variantDto.variantSku())
+                            .size(variantDto.size())
+                            .color(variantDto.color())
+                            .configuration(variantDto.configuration())
+                            .price(variantDto.price())
+                            .weightInGrams(variantDto.weightInGrams())
+                            .description(variantDto.description())
+                            .stock(variantDto.stock())
+                            .active(true)
+                            .product(product) // link variant to parent product
+                            .build())
+                    .toList();
+
+            product.setVariants(variantList);
+        }
 
         return product;
     }
 
-    @Override
     public ProductDocument toDocument(Product product) {
+        if (product == null) return null;
+
         return ProductDocument.builder()
                 .productId(product.getProductId())
                 .sku(product.getSku())
                 .name(product.getName())
                 .brand(product.getBrand())
                 .category(product.getCategory())
-                .description(product.getDescription())
-                .price(product.getPrice())
                 .variantDocumentList(mapVariants(product.getVariants()))
                 .build();
     }
@@ -70,7 +75,6 @@ public class ProductMapperImpl implements ProductMapper {
                 .color(variant.getColor())
                 .configuration(variant.getConfiguration())
                 .price(variant.getPrice())
-                .stock(variant.getStock())
                 .build();
     }
 }
