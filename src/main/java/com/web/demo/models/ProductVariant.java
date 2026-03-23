@@ -47,9 +47,6 @@ public class ProductVariant {
     @Builder.Default
     private Boolean active = true;
 
-    @Column(name = "STOCK")
-    private Integer stock;
-
     @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "product_id", nullable = false)
     private Product product;

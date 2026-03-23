@@ -34,7 +34,6 @@ public class ProductMapperImpl implements ProductMapper {
                             .price(variantDto.price())
                             .weightInGrams(variantDto.weightInGrams())
                             .description(variantDto.description())
-                            .stock(variantDto.stock())
                             .active(true)
                             .product(product) // link variant to parent product
                             .build())
