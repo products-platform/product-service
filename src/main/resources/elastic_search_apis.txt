@@ -1,0 +1,123 @@
+# Click the Variables button, above, to create your own variables.
+GET ${exampleVariable1} // _search
+{
+  "query": {
+    "${exampleVariable2}": {} // match_all
+  }
+}
+
+GET /_cluster/health
+
+GET _cat/indices?v
+
+PUT /products
+
+PUT products
+{
+  "mappings": {
+    "properties": {
+      "productId": { "type": "long" },
+      "name": { "type": "text" },
+      "brand": { "type": "keyword" },
+      "category": { "type": "keyword" },
+      "description": { "type": "text" },
+      "price": { "type": "double" },
+      "variantDocumentList": {
+        "type": "nested",
+        "properties": {
+          "size": { "type": "keyword" },
+          "color": { "type": "keyword" },
+          "configuration": { "type": "keyword" },
+          "price": { "type": "double" },
+          "stock": { "type": "integer" }
+        }
+      }
+    }
+  }
+}
+
+GET /products/_search
+
+GET /products/_count
+
+GET products/_mapping
+
+GET /products/_search
+{
+  "query": {
+    "term": {
+      "brand": "Apple"
+    }
+  }
+}
+
+GET /products/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "brand": "Apple" } }
+      ]
+    }
+  }
+}
+
+GET /products/_search
+{
+  "query": {
+    "bool": {
+      "must": [
+        { "match": { "brand": "Apple" } },
+        { "match": { "sku": "APL-IP15" } }
+      ]
+    }
+  }
+}
+
+
+GET all_countries_data/_search
+{
+  "_source": ["name"],
+  "query": {
+    "match_all": {}
+  },
+  "size": 1000
+}
+
+GET all_countries_data/_search
+{
+  "_source": ["name", "capital", "region"],
+  "query": {
+    "match_all": {}
+  },
+  "size": 1000
+}
+
+GET all_countries_data/_search
+{
+  "_source": ["name", "capital", "region"],
+  "query": {
+    "term": {
+      "region": "Asia"
+    }
+  }
+}
+
+GET all_countries_data/_search
+{
+  "_source": ["name", "capital", "region", "currencies.code"],
+  "query": {
+    "match_all": {}
+  },
+  "size": 1000
+}
+
+GET all_countries_data/_search
+{
+  "_source": ["name"],
+  "query": {
+    "match_phrase_prefix": {
+      "name": "Af"
+    }
+  }
+}

@@ -4,12 +4,13 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.product.dtos.ProductRequest;
 import com.product.dtos.ProductResponse;
 import com.product.dtos.ProductSearchRequest;
-import com.product.exceptions.DuplicateResourceException;
+import com.product.dtos.ProductVariantRequest;
 import com.product.exceptions.ProductNotFoundException;
 import com.product.exceptions.ResourceNotFoundException;
 import com.web.demo.documents.ProductDocument;
 import com.web.demo.mapper.ProductMapper;
 import com.web.demo.models.Product;
+import com.web.demo.models.ProductVariant;
 import com.web.demo.producer.ProductEventProducer;
 import com.web.demo.reader.JsonFileReader;
 import com.web.demo.records.ProductDto;
@@ -28,8 +29,11 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
+import java.util.stream.Collectors;
 
 @Service
 @Transactional
@@ -56,20 +60,6 @@ public class ProductServiceImpl implements ProductService {
         );
     }
 
-    @Override
-    public List<ProductDto> getAllProducts() {
-        return products;
-    }
-
-    @Override
-    public ProductDto getProductByIdJsonFile(Long id) {
-        return products.stream()
-                .filter(c -> c.id().equals(id))
-                .findFirst()
-                .orElseThrow(() ->
-                        new ResourceNotFoundException("Customer not found with id: " + id));
-    }
-
     // ✅ CREATE PRODUCT
     //@CachePut(value = "products", key = "#result.id")
     @Override
@@ -89,7 +79,7 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public String createBulkProducts(List<ProductRequest> requests) {
         List<Product> products = requests.stream()
-                .map(request -> productMapper.buildEntity(request))
+                .map(productMapper::buildEntity)
                 .toList();
         // ✅ Save to DB
         productRepository.saveAll(products);
@@ -115,6 +105,42 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
+    public List<ProductRequest> findAllProducts() {
+        List<Product> products = productRepository.findAllProducts();
+        return productMapper.toRecords(products);
+    }
+
+    @Override
+    public ProductRequest patchProduct(Long productId, ProductRequest updatedData) {
+        Product existingProduct = productRepository.findById(productId)
+                .orElseThrow(() -> new RuntimeException("Product not found"));
+
+        // Update fields
+        productMapper.patchProduct(existingProduct, updatedData);
+
+        // Save updated product
+        productRepository.save(existingProduct);
+
+        // ✅ Re-index in Elasticsearch
+        indexToElastic(existingProduct);
+        return productMapper.toRecord(existingProduct);
+    }
+
+    @Override
+    public List<ProductDto> getAllProducts() {
+        return products;
+    }
+
+    @Override
+    public ProductDto getProductByIdJsonFile(Long id) {
+        return products.stream()
+                .filter(c -> c.id().equals(id))
+                .findFirst()
+                .orElseThrow(() ->
+                        new ResourceNotFoundException("Customer not found with id: " + id));
+    }
+
+    @Override
     @CachePut(value = "products", key = "#id")
     public ProductResponse update(Long id, ProductRequest request) {
         Product product = productRepository.findById(id)
@@ -129,10 +155,10 @@ public class ProductServiceImpl implements ProductService {
 
     @Override
     @Transactional(readOnly = true)
-    @Cacheable(value = "products", key = "#id")
-    public ProductResponse getProductById(Long id) {
+    //@Cacheable(value = "products", key = "#id")
+    public ProductRequest getProductById(Long id) {
         return productRepository.findById(id)
-                .map(this::mapToResponse)
+                .map(productMapper::toRecord)
                 .orElseThrow(() -> new ProductNotFoundException(id));
     }
 

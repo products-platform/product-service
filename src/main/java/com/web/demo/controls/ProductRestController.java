@@ -6,6 +6,7 @@ import com.product.dtos.ProductSearchRequest;
 import com.web.demo.records.ProductDto;
 import com.web.demo.services.ProductService;
 import org.springframework.data.domain.Page;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -31,6 +32,29 @@ public class ProductRestController {
         return productService.createBulkProducts(requests);
     }
 
+    @GetMapping("all")
+    public List<ProductRequest> findAll() {
+        return productService.findAllProducts();
+    }
+
+    @GetMapping("/{id}")
+    public ProductRequest getProductById(@PathVariable Long id) {
+        return productService.getProductById(id);
+    }
+
+    @PatchMapping("/{productId}")
+    public ResponseEntity<ProductRequest> patchProduct(
+            @PathVariable Long productId,
+            @RequestBody ProductRequest updatedData) {
+        ProductRequest productRequest = productService.patchProduct(productId, updatedData);
+        return ResponseEntity.ok(productRequest);
+    }
+
+    @GetMapping("colors")
+    public List<String> availableColors() {
+        return List.of("red", "green", "blue", "gold", "purple", "white", "gray", "black");
+    }
+
     @GetMapping("list")
     public List<ProductDto> getAllProducts() {
         return productService.getAllProducts();
@@ -39,11 +63,6 @@ public class ProductRestController {
     @GetMapping("/byId/{id}")
     public ProductDto getProductByIdJsonFile(@PathVariable Long id) {
         return productService.getProductByIdJsonFile(id);
-    }
-
-    @GetMapping("/{id}")
-    public ProductResponse getProductById(@PathVariable Long id) {
-        return productService.getProductById(id);
     }
 
     @PutMapping("/{id}")

@@ -42,13 +42,15 @@ CREATE TABLE product_variants (
     created_at TIMESTAMP NOT NULL,
     updated_at TIMESTAMP NOT NULL,
 
-    CONSTRAINT uk_variant_sku UNIQUE (variant_sku),
-
     CONSTRAINT fk_product_variant_product
         FOREIGN KEY (product_id)
         REFERENCES products(ID)
         ON DELETE CASCADE
 );
+
+ALTER TABLE product_variants
+ADD CONSTRAINT uk_variant_combination
+UNIQUE (variant_sku, color, variant_size);
 
 -- Product indexes
 CREATE UNIQUE INDEX idx_product_sku ON products (sku);

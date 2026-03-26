@@ -1,13 +1,17 @@
 package com.web.demo.mapper;
 
 import com.product.dtos.ProductRequest;
+import com.product.dtos.ProductVariantRequest;
 import com.web.demo.documents.ProductDocument;
 import com.web.demo.documents.VariantDocument;
 import com.web.demo.models.Product;
 import com.web.demo.models.ProductVariant;
 import org.springframework.stereotype.Component;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
+import java.util.stream.Collectors;
 
 @Component
 public class ProductMapperImpl implements ProductMapper {
@@ -26,23 +30,76 @@ public class ProductMapperImpl implements ProductMapper {
 
         if (dto.variants() != null) {
             List<ProductVariant> variantList = dto.variants().stream()
-                    .map(variantDto -> ProductVariant.builder()
-                            .variantSku(variantDto.variantSku())
-                            .size(variantDto.size())
-                            .color(variantDto.color())
-                            .configuration(variantDto.configuration())
-                            .price(variantDto.price())
-                            .weightInGrams(variantDto.weightInGrams())
-                            .description(variantDto.description())
-                            .active(true)
-                            .product(product) // link variant to parent product
-                            .build())
+                    .map(this::toEntity)
                     .toList();
 
             product.setVariants(variantList);
         }
 
         return product;
+    }
+
+    public void patchProduct(Product product, ProductRequest updatedData) {
+        // ------------------------
+        // Product fields (partial)
+        // ------------------------
+        if (updatedData.name() != null) product.setName(updatedData.name());
+        if (updatedData.brand() != null) product.setBrand(updatedData.brand());
+        if (updatedData.category() != null) product.setCategory(updatedData.category());
+        if (updatedData.active() != null) product.setActive(updatedData.active());
+
+        // ------------------------
+        // Variants
+        // ------------------------
+        if (updatedData.variants() != null) {
+            Map<Long, ProductVariant> existingMap = product.getVariants().stream()
+                    .collect(Collectors.toMap(ProductVariant::getId, v -> v));
+
+            List<ProductVariant> finalVariants = new ArrayList<>();
+
+            for (ProductVariantRequest incoming : updatedData.variants()) {
+
+                if (incoming.variantId() != null && existingMap.containsKey(incoming.variantId())) {
+                    // ✅ Update existing
+                    ProductVariant existing = existingMap.get(incoming.variantId());
+                    patchVariant(existing, incoming);
+                } else {
+                    // ✅ Create new
+                    ProductVariant newVariant = toEntity(incoming);
+                    newVariant.setProduct(product); // VERY IMPORTANT
+                    product.getVariants().add(newVariant);
+                }
+            }
+        }
+    }
+
+    // ------------------------
+    // Variant partial update
+    // ------------------------
+    private void patchVariant(ProductVariant existing, ProductVariantRequest incoming) {
+        if (incoming.variantSku() != null) existing.setVariantSku(incoming.variantSku());
+        if (incoming.price() != null) existing.setPrice(incoming.price());
+        if (incoming.size() != null) existing.setSize(incoming.size());
+        if (incoming.color() != null) existing.setColor(incoming.color());
+        if (incoming.configuration() != null) existing.setConfiguration(incoming.configuration());
+        if (incoming.weightInGrams() != null) existing.setWeightInGrams(incoming.weightInGrams());
+        if (incoming.description() != null) existing.setDescription(incoming.description());
+    }
+
+    // ------------------------
+    // New variant mapping
+    // ------------------------
+    private ProductVariant toEntity(ProductVariantRequest incoming) {
+        return ProductVariant.builder()
+                .variantSku(incoming.variantSku())
+                .size(incoming.size())
+                .color(incoming.color())
+                .configuration(incoming.configuration())
+                .price(incoming.price())
+                .weightInGrams(incoming.weightInGrams())
+                .description(incoming.description())
+                .active(true)
+                .build();
     }
 
     public ProductDocument toDocument(Product product) {
@@ -75,5 +132,54 @@ public class ProductMapperImpl implements ProductMapper {
                 .configuration(variant.getConfiguration())
                 .price(variant.getPrice())
                 .build();
+    }
+
+    @Override
+    public List<ProductRequest> toRecords(List<Product> products) {
+        return products.stream().map(this::toRecord).toList();
+    }
+
+    // Entity -> Record
+    @Override
+    public ProductRequest toRecord(Product product) {
+        if (product == null) return null;
+
+        return new ProductRequest(
+                product.getProductId(),
+                product.getSku(),
+                product.getName(),
+                product.getBrand(),
+                product.getCategory(),
+                toVariantRecordList(product.getVariants()),
+                product.getActive(),
+                product.getCreatedAt(),
+                product.getUpdatedAt()
+        );
+    }
+
+    public static List<ProductVariantRequest> toVariantRecordList(List<ProductVariant> variants) {
+        if (variants == null) return List.of();
+
+        return variants.stream()
+                .map(ProductMapperImpl::toVariantRecord)
+                .toList();
+    }
+
+    public static ProductVariantRequest toVariantRecord(ProductVariant variant) {
+        if (variant == null) return null;
+
+        return new ProductVariantRequest(
+                variant.getId(),
+                variant.getSize(),
+                variant.getColor(),
+                variant.getConfiguration(),
+                variant.getPrice(),
+                variant.getWeightInGrams(),
+                variant.getDescription(),
+                variant.getVariantSku(),
+                10,
+                variant.getActive()
+        );
+
     }
 }

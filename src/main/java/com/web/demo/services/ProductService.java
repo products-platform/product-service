@@ -18,7 +18,7 @@ public interface ProductService {
 
     ProductResponse update(Long id, ProductRequest request);
 
-    ProductResponse getProductById(Long id);
+    ProductRequest getProductById(Long id);
 
     Page<ProductResponse> getAll(int page, int size);
 
@@ -30,4 +30,8 @@ public interface ProductService {
     List<ProductResponse> searchProducts(ProductSearchRequest productSearchRequest);
 
     String createBulkProducts(List<ProductRequest> requests);
+
+    List<ProductRequest> findAllProducts();
+
+    ProductRequest patchProduct(Long productId,ProductRequest updatedData);
 }
