@@ -25,7 +25,4 @@ public class VariantDocument {
     @Field(type = FieldType.Double)
     private BigDecimal price;
 
-    @Field(type = FieldType.Integer)
-    private Integer stock;
-
 }

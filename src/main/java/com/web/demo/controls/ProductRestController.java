@@ -65,7 +65,7 @@ public class ProductRestController {
         return productService.getProductByIdJsonFile(id);
     }
 
-    @PutMapping("/{id}")
+    /*@PutMapping("/{id}")
     public ProductResponse update(@PathVariable Long id,
                                   @RequestBody ProductRequest request) {
         return productService.update(id, request);
@@ -93,6 +93,6 @@ public class ProductRestController {
             @RequestBody Set<Long> ids) {
 
         return productService.getProductsByIds(ids);
-    }
+    }*/
 }
 

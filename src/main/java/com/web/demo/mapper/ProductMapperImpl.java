@@ -8,7 +8,6 @@ import com.web.demo.models.Product;
 import com.web.demo.models.ProductVariant;
 import org.springframework.stereotype.Component;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -55,8 +54,6 @@ public class ProductMapperImpl implements ProductMapper {
             Map<Long, ProductVariant> existingMap = product.getVariants().stream()
                     .collect(Collectors.toMap(ProductVariant::getId, v -> v));
 
-            List<ProductVariant> finalVariants = new ArrayList<>();
-
             for (ProductVariantRequest incoming : updatedData.variants()) {
 
                 if (incoming.variantId() != null && existingMap.containsKey(incoming.variantId())) {
@@ -71,6 +68,39 @@ public class ProductMapperImpl implements ProductMapper {
                 }
             }
         }
+    }
+
+    @Override
+    public ProductRequest mapToResponseFromDocument(ProductDocument content) {
+        return new ProductRequest(
+                content.getProductId(),
+                content.getSku(),
+                content.getName(),
+                content.getBrand(),
+                content.getCategory(),
+                toVariantFromDocList(content.getVariantDocumentList()),
+                null,
+                null,
+                null
+        );
+    }
+
+    private List<ProductVariantRequest> toVariantFromDocList(List<VariantDocument> variantDocumentList) {
+        return variantDocumentList.stream().map(this::toVariantFromDoc).toList();
+    }
+
+    private ProductVariantRequest toVariantFromDoc(VariantDocument variantDocument) {
+        return new ProductVariantRequest(Long.valueOf(10),
+                variantDocument.getSize(),
+                variantDocument.getColor(),
+                variantDocument.getConfiguration(),
+                variantDocument.getPrice(),
+                null,
+                null,
+                null,
+                null,
+                null
+        );
     }
 
     // ------------------------

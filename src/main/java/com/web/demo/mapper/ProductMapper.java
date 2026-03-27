@@ -16,4 +16,6 @@ public interface ProductMapper {
     ProductRequest toRecord(Product product);
 
     void patchProduct(Product product, ProductRequest updatedData);
+
+    ProductRequest mapToResponseFromDocument(ProductDocument content);
 }
