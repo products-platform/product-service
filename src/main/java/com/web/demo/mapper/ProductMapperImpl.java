@@ -98,7 +98,6 @@ public class ProductMapperImpl implements ProductMapper {
                 null,
                 null,
                 null,
-                null,
                 null
         );
     }
@@ -207,7 +206,6 @@ public class ProductMapperImpl implements ProductMapper {
                 variant.getWeightInGrams(),
                 variant.getDescription(),
                 variant.getVariantSku(),
-                10,
                 variant.getActive()
         );
 

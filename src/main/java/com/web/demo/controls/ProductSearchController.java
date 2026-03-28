@@ -1,9 +1,6 @@
 package com.web.demo.controls;
 
-import com.product.dtos.ProductElasticSearchRequest;
-import com.product.dtos.ProductElasticSearchResponse;
-import com.product.dtos.ProductRequest;
-import com.product.dtos.ProductResponse;
+import com.product.dtos.*;
 import com.web.demo.services.ProductSearchService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.data.domain.Page;
@@ -30,4 +27,11 @@ public class ProductSearchController {
 
         return productSearchService.searchProducts(keyword);
     }
+
+    @PostMapping("/multiple")
+    public List<ProductRequest> searchMultiple(
+            @RequestBody MultipleProductSearchRequest multipleProductSearchRequest) {
+        return productSearchService.searchMultiple(multipleProductSearchRequest);
+    }
+
 }
