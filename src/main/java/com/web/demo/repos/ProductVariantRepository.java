@@ -2,6 +2,8 @@ package com.web.demo.repos;
 
 import com.web.demo.models.ProductVariant;
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Query;
+import org.springframework.data.repository.query.Param;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
@@ -10,5 +12,11 @@ import java.util.List;
 public interface ProductVariantRepository extends JpaRepository<ProductVariant, Long> {
 
     List<ProductVariant> findByProduct_ProductId(Long productId);
+
+    @Query("""
+                SELECT v FROM ProductVariant v
+                WHERE v.product.id IN :productIds
+            """)
+    List<ProductVariant> findByProductIds(@Param("productIds") List<Long> productIds);
 
 }

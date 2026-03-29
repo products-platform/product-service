@@ -3,6 +3,8 @@ package com.web.demo.services;
 import com.product.dtos.ProductRequest;
 import com.product.dtos.ProductResponse;
 import com.product.dtos.ProductSearchRequest;
+import com.product.dtos.order.ProductRequestItem;
+import com.product.dtos.product.ProductResponseDTO;
 import com.web.demo.records.ProductDto;
 import org.springframework.data.domain.Page;
 
@@ -33,5 +35,7 @@ public interface ProductService {
 
     List<ProductRequest> findAllProducts();
 
-    ProductRequest patchProduct(Long productId,ProductRequest updatedData);
+    ProductRequest patchProduct(Long productId, ProductRequest updatedData);
+
+    List<ProductResponseDTO> getProducts(List<ProductRequestItem> items);
 }

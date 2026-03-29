@@ -2,15 +2,14 @@ package com.web.demo.controls;
 
 import com.product.dtos.ProductRequest;
 import com.product.dtos.ProductResponse;
-import com.product.dtos.ProductSearchRequest;
+import com.product.dtos.order.ProductRequestItem;
+import com.product.dtos.product.ProductResponseDTO;
 import com.web.demo.records.ProductDto;
 import com.web.demo.services.ProductService;
-import org.springframework.data.domain.Page;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
-import java.util.Set;
 
 @RestController
 @RequestMapping("/products")
@@ -63,6 +62,12 @@ public class ProductRestController {
     @GetMapping("/byId/{id}")
     public ProductDto getProductByIdJsonFile(@PathVariable Long id) {
         return productService.getProductByIdJsonFile(id);
+    }
+
+    @PostMapping("/batch")
+    public ResponseEntity<List<ProductResponseDTO>> getProducts(
+            @RequestBody List<ProductRequestItem> items) {
+        return ResponseEntity.ok(productService.getProducts(items));
     }
 
     /*@PutMapping("/{id}")

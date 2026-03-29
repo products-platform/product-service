@@ -4,7 +4,8 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.product.dtos.ProductRequest;
 import com.product.dtos.ProductResponse;
 import com.product.dtos.ProductSearchRequest;
-import com.product.dtos.ProductVariantRequest;
+import com.product.dtos.order.ProductRequestItem;
+import com.product.dtos.product.ProductResponseDTO;
 import com.product.exceptions.ProductNotFoundException;
 import com.product.exceptions.ResourceNotFoundException;
 import com.web.demo.documents.ProductDocument;
@@ -16,6 +17,7 @@ import com.web.demo.reader.JsonFileReader;
 import com.web.demo.records.ProductDto;
 import com.web.demo.repos.ProductRepository;
 import com.web.demo.repos.ProductSearchRepository;
+import com.web.demo.repos.ProductVariantRepository;
 import com.web.demo.specification.ProductSpecification;
 import jakarta.annotation.PostConstruct;
 import lombok.AllArgsConstructor;
@@ -29,10 +31,10 @@ import org.springframework.data.domain.Sort;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 @Service
@@ -50,6 +52,7 @@ public class ProductServiceImpl implements ProductService {
     private final ProductEventProducer producer;
     private final ProductMapper productMapper;
     private final ProductSearchRepository searchRepository;
+    private final ProductVariantRepository variantRepository;
 
     @PostConstruct
     public void loadProducts() {
@@ -129,6 +132,54 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public List<ProductDto> getAllProducts() {
         return products;
+    }
+
+    @Override
+    public List<ProductResponseDTO> getProducts(List<ProductRequestItem> items) {
+
+        // ✅ Extract unique productIds
+        List<Long> productIds = items.stream()
+                .map(ProductRequestItem::productId)
+                .distinct()
+                .toList();
+
+        // ✅ Fetch all variants for given products (ONE query)
+        List<ProductVariant> variants =
+                variantRepository.findByProductIds(productIds);
+
+        // ✅ Map using composite key (productId-variantId)
+        Map<String, ProductVariant> variantMap = variants.stream()
+                .collect(Collectors.toMap(
+                        v -> v.getProduct().getProductId() + "-" + v.getId(),
+                        Function.identity()
+                ));
+
+        // ✅ Build response (preserve order)
+        return items.stream()
+                .map(item -> {
+
+                    String key = item.productId() + "-" + item.variantId();
+
+                    ProductVariant variant = variantMap.get(key);
+
+                    if (variant == null) {
+                        throw new RuntimeException(
+                                "Invalid product/variant: " + key
+                        );
+                    }
+
+                    Product product = variant.getProduct();
+
+                    return new ProductResponseDTO(
+                            product.getProductId(),
+                            product.getSku(),
+                            product.getName(),
+                            variant.getVariantSku(),
+                            variant.getId(),
+                            variant.getPrice()
+                    );
+                })
+                .toList();
     }
 
     @Override
