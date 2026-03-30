@@ -64,10 +64,10 @@ public class ProductRestController {
         return productService.getProductByIdJsonFile(id);
     }
 
-    @PostMapping("/batch")
-    public ResponseEntity<List<ProductResponseDTO>> getProducts(
+    @PostMapping("/byVariants")
+    public ResponseEntity<List<ProductResponseDTO>> getProductsByProductAndVariant(
             @RequestBody List<ProductRequestItem> items) {
-        return ResponseEntity.ok(productService.getProducts(items));
+        return ResponseEntity.ok(productService.getProductsByProductAndVariant(items));
     }
 
     /*@PutMapping("/{id}")

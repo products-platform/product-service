@@ -135,8 +135,7 @@ public class ProductServiceImpl implements ProductService {
     }
 
     @Override
-    public List<ProductResponseDTO> getProducts(List<ProductRequestItem> items) {
-
+    public List<ProductResponseDTO> getProductsByProductAndVariant(List<ProductRequestItem> items) {
         // ✅ Extract unique productIds
         List<Long> productIds = items.stream()
                 .map(ProductRequestItem::productId)

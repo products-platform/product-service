@@ -37,5 +37,5 @@ public interface ProductService {
 
     ProductRequest patchProduct(Long productId, ProductRequest updatedData);
 
-    List<ProductResponseDTO> getProducts(List<ProductRequestItem> items);
+    List<ProductResponseDTO> getProductsByProductAndVariant(List<ProductRequestItem> items);
 }
